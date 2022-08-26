@@ -8,7 +8,7 @@ const WasteSchema = new Schema({
   },
   price: {
     type: Number,
-    required : true
+    // required : true
   },
   quantity : {
     type: Number,
@@ -17,10 +17,10 @@ const WasteSchema = new Schema({
   file:
   {
     type: String,
-    required: true,
+    // required: true,
   },
 });
 
-const waste = mongoose.model("expert", WasteSchema);
+const wastes = mongoose.model("wastes", WasteSchema);
 
-module.exports = waste;
+module.exports = wastes;
