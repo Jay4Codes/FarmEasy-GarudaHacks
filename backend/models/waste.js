@@ -21,6 +21,6 @@ const WasteSchema = new Schema({
   },
 });
 
-const waste = mongoose.model("expert", FarmerSchema);
+const waste = mongoose.model("expert", WasteSchema);
 
 module.exports = waste;

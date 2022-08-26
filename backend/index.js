@@ -22,6 +22,7 @@ app.use(express.json())
 app.use(cors(corsOptions)) // Use this after the variable declaration
 
 app.use('/api/farmer', require('./routes/farmerRoutes'))
+app.use('/api/waste', require('./routes/wasteRoutes'))
 
 app.listen(5000, ()=>{
     console.log("App Started");

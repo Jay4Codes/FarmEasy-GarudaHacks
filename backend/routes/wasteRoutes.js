@@ -16,3 +16,5 @@ router.post('/postwaste',
         }
     }
     )
+
+    module.exports = router;
