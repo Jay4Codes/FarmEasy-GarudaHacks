@@ -2,14 +2,14 @@ import React from "react";
 import Footer from "./Footer";
 import Header from "./Header";
 
-function Contact() {
+function WasteStore() {
   return (
     <div>
       <Header />
-      Contact
+      Waste Store
       <Footer />
     </div>
   );
 }
 
-export default Contact;
+export default WasteStore;

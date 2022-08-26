@@ -2,14 +2,14 @@ import React from "react";
 import Footer from "./Footer";
 import Header from "./Header";
 
-function Contact() {
+function About() {
   return (
     <div>
       <Header />
-      Contact
+      About
       <Footer />
     </div>
   );
 }
 
-export default Contact;
+export default About;

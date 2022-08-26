@@ -32,13 +32,22 @@ function Footer() {
               </ul>
               <ul className="footer-menu text-uppercase">
                 <li>
-                  <Link to="/contact">CONTACT</Link>
+                  <Link to="/">HOME</Link>
                 </li>
                 <li>
-                  <Link to="/shop">SHOP</Link>
+                  <Link to="/waste-store">WASTE STORE</Link>
+                </li>
+                <li>
+                  <Link to="/product-store">PRODUCT STORE</Link>
                 </li>
                 <li>
                   <Link to="/profile">PROFILE</Link>
+                </li>
+                <li>
+                  <Link to="/about">ABOUT</Link>
+                </li>
+                <li>
+                  <Link to="/contact">CONTACT</Link>
                 </li>
               </ul>
               <p className="copyright-text">

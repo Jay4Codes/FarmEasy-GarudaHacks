@@ -1,15 +1,15 @@
 import React from "react";
-import Footer from "./Footer";
 import Header from "./Header";
+import Footer from "./Footer";
 
-function Contact() {
+function ProductStore() {
   return (
     <div>
       <Header />
-      Contact
+      Product Store
       <Footer />
     </div>
   );
 }
 
-export default Contact;
+export default ProductStore;
