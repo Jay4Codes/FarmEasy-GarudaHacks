@@ -3,33 +3,33 @@ import React from "react";
 function Footer() {
   return (
     <div>
-      <footer class="footer section text-center">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12">
-              <ul class="social-media">
+      <footer className="footer section text-center">
+        <div className="container">
+          <div className="row">
+            <div className="col-md-12">
+              <ul className="social-media">
                 <li>
                   <a href="">
-                    <i class="tf-ion-social-facebook"></i>
+                    <i className="tf-ion-social-facebook"></i>
                   </a>
                 </li>
                 <li>
                   <a href="">
-                    <i class="tf-ion-social-instagram"></i>
+                    <i className="tf-ion-social-instagram"></i>
                   </a>
                 </li>
                 <li>
                   <a href="">
-                    <i class="tf-ion-social-twitter"></i>
+                    <i className="tf-ion-social-twitter"></i>
                   </a>
                 </li>
                 <li>
                   <a href="">
-                    <i class="tf-ion-social-pinterest"></i>
+                    <i className="tf-ion-social-pinterest"></i>
                   </a>
                 </li>
               </ul>
-              <ul class="footer-menu text-uppercase">
+              <ul className="footer-menu text-uppercase">
                 <li>
                   <a href="contact.html">CONTACT</a>
                 </li>
@@ -43,7 +43,7 @@ function Footer() {
                   <a href="contact.html">PRIVACY POLICY</a>
                 </li>
               </ul>
-              <p class="copyright-text">
+              <p className="copyright-text">
                 Copyright &copy;2022, Designed &amp; Developed by Team MangoDB
               </p>
             </div>
