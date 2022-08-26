@@ -1,7 +1,15 @@
 import React from "react";
+import Header from "./Header";
+import Footer from "./Footer";
 
 function Home() {
-  return <div>Home</div>;
+  return (
+    <div>
+      <Header />
+      Home
+      <Footer />
+    </div>
+  );
 }
 
 export default Home;
