@@ -23,7 +23,7 @@ app.use(cors(corsOptions)) // Use this after the variable declaration
 
 app.use('/api/farmer', require('./routes/farmerRoutes'))
 app.use('/api/waste', require('./routes/wasteRoutes'))
-app.use('/api/buyer', require('./routes/buyerRoutes'))
+app.use('/api/product', require('./routes/productRoutes'))
 
 app.listen(5000, ()=>{
     console.log("App Started");
