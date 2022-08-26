@@ -8,7 +8,7 @@ const fetchFarmer = (req, res, next) => {
   }
   try {
     const data = jwt.verify(token, JWT_SECRET);
-    req.farmer = data.farmer;
+    req.farmers = data.farmers;
     next();
   } catch (error) {
     res.status(401).send({ error: "Error occured" });
