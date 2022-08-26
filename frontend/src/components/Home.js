@@ -20,8 +20,8 @@ function Home() {
                 <a href="#!">
                   <img src="images/shop/category/category-1.jpg" alt="" />
                   <div className="content">
-                    <h3>Clothes Sales</h3>
-                    <p>Shop New Season Clothing</p>
+                    <h3>Insecticide Sales</h3>
+                    <p>Organic</p>
                   </div>
                 </a>
               </div>
@@ -29,8 +29,8 @@ function Home() {
                 <a href="#!">
                   <img src="images/shop/category/category-2.jpg" alt="" />
                   <div className="content">
-                    <h3>Smart Casuals</h3>
-                    <p>Get Wide Range Selection</p>
+                    <h3>Rice Straw Sale</h3>
+                    <p>Organic</p>
                   </div>
                 </a>
               </div>
@@ -40,8 +40,8 @@ function Home() {
                 <a href="#!">
                   <img src="images/shop/category/category-3.jpg" alt="" />
                   <div className="content">
-                    <h3>Jewellery</h3>
-                    <p>Special Design Comes First</p>
+                    <h3>Manure</h3>
+                    <p>Discount</p>
                   </div>
                 </a>
               </div>
@@ -89,7 +89,7 @@ function Home() {
                 </div>
                 <div className="product-content">
                   <h4>
-                    <a href="product-single.html">Reef Boardsport</a>
+                    <a href="product-single.html">Rice Straw</a>
                   </h4>
                   <p className="price">$200</p>
                 </div>
@@ -125,7 +125,7 @@ function Home() {
                 </div>
                 <div className="product-content">
                   <h4>
-                    <a href="product-single.html">Rainbow Shoes</a>
+                    <a href="product-single.html">Pig Manure</a>
                   </h4>
                   <p className="price">$200</p>
                 </div>
@@ -161,7 +161,7 @@ function Home() {
                 </div>
                 <div className="product-content">
                   <h4>
-                    <a href="product-single.html">Strayhorn SP</a>
+                    <a href="product-single.html">Cow Dung</a>
                   </h4>
                   <p className="price">$230</p>
                 </div>

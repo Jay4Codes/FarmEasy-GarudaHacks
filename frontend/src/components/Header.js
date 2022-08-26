@@ -46,6 +46,9 @@ function Header() {
                     </li>
                   </ul>
                 </li>
+                <li>
+                  <Link to="/login">Log Out</Link>
+                </li>
               </ul>
             </div>
           </div>
