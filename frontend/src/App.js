@@ -1,6 +1,8 @@
 import "./App.css";
 import Home from "./components/Home";
 import About from "./components/About";
+import Login from "./components/Login";
+import SignUp from "./components/SignUp";
 import Contact from "./components/Contact";
 import Profile from "./components/Profile";
 import NoMatch from "./components/NoMatch";
@@ -16,6 +18,8 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/home" element={<Home />} />
           <Route path="/about" element={<About />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/signup" element={<SignUp />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/profile" element={<Profile />} />
           <Route path="/waste-store" element={<WasteStore />} />

@@ -44,6 +44,9 @@ function Header() {
                         />
                       </form>
                     </li>
+                    <li>
+                      <Link to="/login">Log Out</Link>
+                    </li>
                   </ul>
                 </li>
               </ul>
