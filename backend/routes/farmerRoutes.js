@@ -47,7 +47,7 @@ async(req, res)=>{
 
       success = true
       res.json({success, authToken})
-      console.log(farmer);
+      // console.log(farmer);
     }catch(err){
       console.log(err);
       res.json({status : 'error', error : err})
