@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Header() {
   return (
@@ -14,9 +15,9 @@ function Header() {
             </div>
             <div className="col-md-4 col-xs-12 col-sm-4">
               <div className="logo text-center">
-                <a href="index.html">
+                <Link to="/">
                   <img src="" alt="logo" />
-                </a>
+                </Link>
               </div>
             </div>
             <div className="col-md-4 col-xs-12 col-sm-4">

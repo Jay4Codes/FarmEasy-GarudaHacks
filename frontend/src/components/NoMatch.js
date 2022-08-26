@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function NoMatch() {
   return (
@@ -7,14 +8,14 @@ function NoMatch() {
         <div className="container">
           <div className="row">
             <div className="col-md-12">
-              <a href="index.html">
+              <Link to="/">
                 <img src="images/logo.png" alt="site logo" />
-              </a>
+              </Link>
               <h1>404</h1>
               <h2>Page Not Found</h2>
-              <a href="index.html" className="btn btn-main">
+              <Link to="/" className="btn btn-main">
                 <i className="tf-ion-android-arrow-back"></i> Go Home
-              </a>
+              </Link>
               <p className="copyright-text">
                 © 2022 Team MangoDB All Rights Reserved
               </p>

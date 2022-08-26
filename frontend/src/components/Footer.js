@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Footer() {
   return (
@@ -9,38 +10,35 @@ function Footer() {
             <div className="col-md-12">
               <ul className="social-media">
                 <li>
-                  <a href="">
+                  <a href="#">
                     <i className="tf-ion-social-facebook"></i>
                   </a>
                 </li>
                 <li>
-                  <a href="">
+                  <a href="#">
                     <i className="tf-ion-social-instagram"></i>
                   </a>
                 </li>
                 <li>
-                  <a href="">
+                  <a href="#">
                     <i className="tf-ion-social-twitter"></i>
                   </a>
                 </li>
                 <li>
-                  <a href="">
+                  <a href="#">
                     <i className="tf-ion-social-pinterest"></i>
                   </a>
                 </li>
               </ul>
               <ul className="footer-menu text-uppercase">
                 <li>
-                  <a href="contact.html">CONTACT</a>
+                  <Link to="/contact">CONTACT</Link>
                 </li>
                 <li>
-                  <a href="shop.html">SHOP</a>
+                  <Link to="/shop">SHOP</Link>
                 </li>
                 <li>
-                  <a href="pricing.html">Pricing</a>
-                </li>
-                <li>
-                  <a href="contact.html">PRIVACY POLICY</a>
+                  <Link to="/profile">PROFILE</Link>
                 </li>
               </ul>
               <p className="copyright-text">
