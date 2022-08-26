@@ -2,14 +2,14 @@ import React from "react";
 import Header from "./Header";
 import Footer from "./Footer";
 
-function Home() {
+function ProductStore() {
   return (
     <div>
       <Header />
-      Home
+      Product Store
       <Footer />
     </div>
   );
 }
 
-export default Home;
+export default ProductStore;

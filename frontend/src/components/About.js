@@ -1,15 +1,15 @@
 import React from "react";
-import Header from "./Header";
 import Footer from "./Footer";
+import Header from "./Header";
 
-function Home() {
+function About() {
   return (
     <div>
       <Header />
-      Home
+      About
       <Footer />
     </div>
   );
 }
 
-export default Home;
+export default About;

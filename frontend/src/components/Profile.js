@@ -1,15 +1,15 @@
 import React from "react";
-import Header from "./Header";
 import Footer from "./Footer";
+import Header from "./Header";
 
-function Home() {
+function Profile() {
   return (
     <div>
       <Header />
-      Home
+      Profile
       <Footer />
     </div>
   );
 }
 
-export default Home;
+export default Profile;
