@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 const { Schema } = mongoose;
 
-const FarmerSchema = new Schema({
+const BuyerSchema = new Schema({
   name: {
     type: String,
   },
@@ -27,6 +27,6 @@ const FarmerSchema = new Schema({
   }
 });
 
-const farmers = mongoose.model("expert", FarmerSchema);
+const buyers = mongoose.model("buyers", BuyerSchema);
 
-module.exports = farmers;
+module.exports = buyers;
