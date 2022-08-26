@@ -1,5 +1,6 @@
 const express = require("express");
 const farmers = require("../models/farmers");
+const products = require("../models/products");
 const router = express.Router();
 const { body, validationResult } = require("express-validator");
 const bcrypt = require('bcryptjs');
@@ -46,6 +47,7 @@ async(req, res)=>{
 
       success = true
       res.json({success, authToken})
+      console.log(farmer);
     }catch(err){
       console.log(err);
       res.json({status : 'error', error : err})
@@ -94,7 +96,34 @@ async(req, res)=>{
     }
   } 
   )
-
   
+router.put('/buyproduct/:id',
+async(req, res) => {
+    try {
+      const farmer = await farmers.findById(req.params.id)
+      const product = await products.findById(req.header('prod-id'))
+      const prodprice = product.tokenprice
+      const farmertoken = farmer.token
+      const finaltoken = farmertoken - prodprice
+      await farmers.findByIdAndUpdate(req.params.id, {token: finaltoken})
+      await res.send(farmer)
+ 
+    } catch (error) {
+        console.log(error);   
+        res.json({status : 'error', error : error})
+      }
+    }
+    )
+    
+    router.get('/getfarmerdetails',
+    async(req, res) => {
+      try {
+        const farmer = await farmers.findById(req.header('id'))
+        res.send(farmer)
+      } catch (error) {
+      console.log(error);   
+      res.json({status : 'error', error : error})
+    }
+  })
  
   module.exports = router;
