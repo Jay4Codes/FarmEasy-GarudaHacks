@@ -27,6 +27,6 @@ const FarmerSchema = new Schema({
   }
 });
 
-const farmers = mongoose.model("expert", FarmerSchema);
+const farmers = mongoose.model("farmers", FarmerSchema);
 
 module.exports = farmers;
