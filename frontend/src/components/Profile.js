@@ -12,7 +12,7 @@ function Profile() {
             <img
               className="media-object user-img"
               src="images/avater.jpg"
-              alt="Image"
+              alt=""
             />
             <a href="#x" className="btn btn-transparent mt-20">
               Change Image

@@ -1,7 +1,6 @@
 import React from "react";
 import Footer from "./Footer";
 import Header from "./Header";
-import { Link } from "react-router-dom";
 
 function Contact() {
   return (
@@ -24,7 +23,7 @@ function Contact() {
           <div className="container">
             <div className="row">
               <div className="contact-form col-md-6 ">
-                <form id="contact-form" method="post" action="" role="form">
+                <form id="contact-form" method="post" action="">
                   <div className="form-group">
                     <input
                       type="text"
@@ -94,6 +93,7 @@ function Contact() {
                       style={{ border: "0", borderRadius: "20px" }}
                       allowfullscreen=""
                       loading="lazy"
+                      title="map"
                       referrerpolicy="no-referrer-when-downgrade"
                     ></iframe>
                   </div>
