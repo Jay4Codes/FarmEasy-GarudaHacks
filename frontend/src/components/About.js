@@ -34,7 +34,7 @@ function About() {
                 modi quis iste tempora non, suscipit repellendus labore
                 voluptatem dicta amet?
               </p>
-              <a href="#" className="btn btn-main mt-20">
+              <a href="https://garudahacks.com/" className="btn btn-main mt-20">
                 Watch Our Presentation
               </a>
             </div>
@@ -125,7 +125,7 @@ function About() {
           <div className="row">
             <div className="col-md-12">
               <h2>Video presentation</h2>
-              <a className="play-icon" href="#" data-toggle="lightbox">
+              <a className="play-icon" href="https://garudahacks.com/" data-toggle="lightbox">
                 <i className="tf-ion-ios-play"></i>
               </a>
             </div>

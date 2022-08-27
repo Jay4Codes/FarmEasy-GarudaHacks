@@ -13,7 +13,7 @@ function NoMatch() {
               </Link>
               <h1>404</h1>
               <h2>Page Not Found</h2>
-              <Link to="/" className="btn btn-main">
+              <Link to="/" className="btn btn-main link">
                 <i className="tf-ion-android-arrow-back"></i> Go Home
               </Link>
               <p className="copyright-text">

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
+import hori_logo from "../assets/images/hori_logo.png";
 
 function SignUp() {
   let navigate = useNavigate();
@@ -41,6 +42,7 @@ function SignUp() {
           <div className="row">
             <div className="col-md-6 col-md-offset-3">
               <div className="block text-center">
+                <img src={hori_logo} alt="logo" />
                 <h2 className="text-center">Create Your Buyer's Account</h2>
                 <form className="text-left clearfix">
                   <div className="form-group">
@@ -104,7 +106,11 @@ function SignUp() {
                   </div>
                 </form>
                 <p className="mt-20">
-                  Already have an account ?<Link to="/login"> Login</Link>
+                  Already have an account ?
+                  <Link to="/login" className="link">
+                    {" "}
+                    Login
+                  </Link>
                 </p>
               </div>
             </div>

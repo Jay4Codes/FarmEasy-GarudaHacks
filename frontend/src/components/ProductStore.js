@@ -64,12 +64,12 @@ function ProductStore() {
                   <div className="preview-meta">
                     <ul>
                       <li>
-                        <a href="#">
+                        <a href="https://garudahacks.com/">
                           <i className="tf-ion-ios-heart"></i>
                         </a>
                       </li>
                       <li>
-                        <a href="#!">
+                        <a href="https://garudahacks.com/">
                           <i className="tf-ion-android-cart"></i>
                         </a>
                       </li>
@@ -95,12 +95,12 @@ function ProductStore() {
                   <div className="preview-meta">
                     <ul>
                       <li>
-                        <a href="#">
+                        <a href="https://garudahacks.com/">
                           <i className="tf-ion-ios-heart"></i>
                         </a>
                       </li>
                       <li>
-                        <a href="#!">
+                        <a href="https://garudahacks.com/">
                           <i className="tf-ion-android-cart"></i>
                         </a>
                       </li>

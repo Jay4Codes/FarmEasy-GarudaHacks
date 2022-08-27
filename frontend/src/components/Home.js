@@ -56,14 +56,16 @@ function Home() {
           <img
             src="https://user-images.githubusercontent.com/65358991/170092504-132fa547-5ced-40e5-ab64-ded61518fac2.png"
             id="bird1"
+            alt="bird1"
           />
           <img
             src="https://user-images.githubusercontent.com/65358991/170092542-9747edcc-fb51-4e21-aaf5-a61119393618.png"
             id="bird2"
+            alt="bird2"
           />
-          <img src={land} id="forest" />
+          <img src={land} id="forest" alt="forest" />
 
-          <img src={waste} id="rocks" />
+          <img src={waste} id="rocks" alt="rocks" />
         </section>
       </section>
 
@@ -156,7 +158,7 @@ function Home() {
                     <div className="preview-meta">
                       <ul>
                         <li>
-                          <a href="#">
+                          <a href="https://garudahacks.com/">
                             <i className="tf-ion-ios-heart"></i>
                           </a>
                         </li>
@@ -187,7 +189,7 @@ function Home() {
                     <div className="preview-meta">
                       <ul>
                         <li>
-                          <a href="#">
+                          <a href="https://garudahacks.com/">
                             <i className="tf-ion-ios-heart"></i>
                           </a>
                         </li>
