@@ -5,7 +5,6 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
 
 // Component Imports
-
 import About from "./components/About";
 import Contact from "./components/Contact";
 import Profile from "./components/Profile";
