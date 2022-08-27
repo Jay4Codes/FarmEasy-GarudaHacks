@@ -2,6 +2,7 @@
 import React from "react";
 import { Fade } from "react-reveal";
 import { useState, useEffect } from "react";
+import Alan from './Alan'
 
 // Components Imports
 
@@ -56,6 +57,7 @@ function Home() {
   return (
     <div>
       <HeaderLanding />
+      <Alan />
       <ScrollToTop />
       <Fade bottom>
         <section className="parallax">

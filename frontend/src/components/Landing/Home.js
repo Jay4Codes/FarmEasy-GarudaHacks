@@ -7,6 +7,7 @@ import { useState, useEffect } from "react";
 import Footer from "../Footer";
 import Header from "../Headers/Header";
 import ScrollToTop from "../ScrollToTop";
+import ALan from './Alan'
 
 // CSS Imports
 import "./Home.css";
@@ -29,16 +30,16 @@ function Home() {
   }, [parallax]);
 
   function parrallaxFunc() {
-    console.log("Inside Scroll");
+    // console.log("Inside Scroll");
     let text = document.getElementById("text");
-    console.log(text);
+    // console.log(text);
     let bird1 = document.getElementById("bird1");
     let bird2 = document.getElementById("bird2");
     let rocks = document.getElementById("rocks");
     let forest = document.getElementById("forest");
 
     window.addEventListener("scroll", function () {
-      console.log("Inside Event Scroll");
+      // console.log("Inside Event Scroll");
       let value = window.scrollY;
 
       text.style.top = 50 + value * -0.02 + "%";
@@ -50,11 +51,12 @@ function Home() {
       forest.style.top = value * 0.25 + "px";
     });
 
-    console.log("Done Scroll");
+    // console.log("Done Scroll");
   }
   return (
     <div>
       <Header />
+      <ALan />
       <ScrollToTop />
       <Fade bottom>
         <section className="parallax">
