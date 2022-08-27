@@ -19,26 +19,25 @@ function WasteStore() {
         method: "GET",
         headers: {
           "Content-type": "application/json",
-        }
-      })
-      const json = await res.json()
+        },
+      });
+      const json = await res.json();
       setWastes(json);
-      setLoading(false)
-    } 
-    getWaste()
-  }, [modal])
+      setLoading(false);
+    };
+    getWaste();
+  }, [modal]);
 
-  const purchaseProduct = async ()=>{
-    const res = await fetch ("http://localhost:5000/api/waste/buywaste",{
-      method : 'PATCH',
-      headers : {
+  const purchaseProduct = async () => {
+    const res = await fetch("http://localhost:5000/api/waste/buywaste", {
+      method: "PATCH",
+      headers: {
         "Content-type": "application/json",
       },
       // body : JSON.stringify({name : name, quantity : quantity})
-    })
-    const json = await res.json()
-
-  }
+    });
+    const json = await res.json();
+  };
 
   const WasteItem = (props) => {
     console.log(props);
@@ -60,13 +59,15 @@ function WasteStore() {
                   </a>
                 </li>
                 <li>
-                  <a
-                    onClick={() => {
-                      setModal(true);
-                    }}
-                  >
-                    <i className="tf-ion-android-cart"></i>
-                  </a>
+                  <span data-toggle="modal" data-target="#product-modal">
+                    <a
+                      onClick={() => {
+                        setModal(true);
+                      }}
+                    >
+                      <i className="tf-ion-android-cart"></i>
+                    </a>
+                  </span>
                 </li>
               </ul>
             </div>
