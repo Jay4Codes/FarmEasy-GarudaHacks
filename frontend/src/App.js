@@ -31,7 +31,7 @@ function App() {
           ) : (
             <Route path="/" element={<Landing />} exact={true} />
           )} */}
-          <Route path="/" element={<Landing />} />
+          <Route path="/" element={<Home />} />
           <Route path="/home" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/login" element={<Login />} />
