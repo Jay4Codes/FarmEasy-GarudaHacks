@@ -5,30 +5,33 @@ import { Fade } from "react-reveal";
 // Component Imports
 import Footer from "./Footer";
 import Header from "./Headers/Header";
+import ListWaste from "./ListWaste";
 import ScrollToTop from "./ScrollToTop";
 
 function Profile() {
-
-  const [loading, setLoading] = useState(true)  
-  const [data, setData] = useState()
+  const [loading, setLoading] = useState(true);
+  const [data, setData] = useState();
 
   useEffect(() => {
     const getData = async () => {
-      const res = await fetch("http://localhost:5000/api/farmer/getfarmerdetails",{
-        method : "GET",
-        headers : {
-          "Content-Type" : "application/json",
-          "auth-token" : localStorage.getItem('token') 
+      const res = await fetch(
+        "http://localhost:5000/api/farmer/getfarmerdetails",
+        {
+          method: "GET",
+          headers: {
+            "Content-Type": "application/json",
+            "auth-token": localStorage.getItem("token"),
+          },
         }
-      })
-      const json = await res.json()
-      console.log("json",json);
-      setData(json)
-      setLoading(false)
-    }
-    getData()
-  }, [])
-  
+      );
+      const json = await res.json();
+      console.log("json", json);
+      setData(json);
+      setLoading(false);
+    };
+    getData();
+  }, []);
+
   setTimeout(() => {
     console.log(data);
   }, 3000);
@@ -50,56 +53,64 @@ function Profile() {
                 Change Image
               </a>
             </div>
-            {loading ? 
+            {loading ? (
               <div className="media-body">
-              <ul className="user-profile-list">
-                <li>
-                  <span>Full Name:</span>
-                </li>
-                <li>
-                  <span>Country:</span>
-                </li>
-                <li>
-                  <span>Email:</span>
-                </li>
-                <li>
-                  <span>Phone:</span>
-                </li>
-                <li>
-                  <span>Address:</span>
-                </li>
-                <li>
-                  <span>Tokens:</span>
-                </li>
-              </ul>
-            </div> :
-            <div className="media-body">
-              <ul className="user-profile-list">
-                <li>
-                  <span>Full Name:</span>{data.name}
-                </li>
-                <li>
-                  <span>Country:</span>Phillipines
-                </li>
-                <li>
-                  <span>Email:</span>{data.email}
-                </li>
-                <li>
-                  <span>Phone:</span>{data.phone}
-                </li>
-                <li>
-                  <span>Address:</span>{data.address}
-                </li>
-                <li>
-                  <span>Tokens:</span>{data.token}
-                </li>
-              </ul>
-            </div>
-
-            }
-            
+                <ul className="user-profile-list">
+                  <li>
+                    <span>Full Name:</span>
+                  </li>
+                  <li>
+                    <span>Country:</span>
+                  </li>
+                  <li>
+                    <span>Email:</span>
+                  </li>
+                  <li>
+                    <span>Phone:</span>
+                  </li>
+                  <li>
+                    <span>Address:</span>
+                  </li>
+                  <li>
+                    <span>Tokens:</span>
+                  </li>
+                </ul>
+              </div>
+            ) : (
+              <div className="media-body">
+                <ul className="user-profile-list">
+                  <li>
+                    <span>Full Name:</span>
+                    {data.name}
+                  </li>
+                  <li>
+                    <span>Country:</span>Phillipines
+                  </li>
+                  <li>
+                    <span>Email:</span>
+                    {data.email}
+                  </li>
+                  <li>
+                    <span>Phone:</span>
+                    {data.phone}
+                  </li>
+                  <li>
+                    <span>Address:</span>
+                    {data.address}
+                  </li>
+                  <li>
+                    <span>Tokens:</span>
+                    {data.token}
+                  </li>
+                </ul>
+              </div>
+            )}
           </div>
         </div>
+      </Fade>
+
+      <Fade bottom cascade>
+        <ListWaste />
       </Fade>
 
       <Fade bottom cascade>
