@@ -12,6 +12,7 @@ import cow_dung from "../assets/images/farmwaste/cow_dung.jpg";
 import rice_straw from "../assets/images/farmwaste/rice_straw.png";
 import pig_manure from "../assets/images/farmwaste/pig_manure.png";
 import Fade from "react-reveal";
+import ScrollToTop from "./ScrollToTop";
 
 function Home() {
   const [parallax, setParallax] = useState(0);
@@ -47,6 +48,7 @@ function Home() {
   return (
     <div>
       <Header />
+      <ScrollToTop />
       <Fade bottom>
         <section className="parallax">
           <section>

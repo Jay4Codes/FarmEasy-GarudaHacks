@@ -5,11 +5,13 @@ import about_gif from "../assets/images/recycle.gif";
 import about_gif_2 from "../assets/images/ecommerce.gif";
 import jay from "../assets/images/team/jay.png";
 import { Fade } from "react-reveal";
+import ScrollToTop from "./ScrollToTop";
 
 function About() {
   return (
     <div>
       <Header />
+      <ScrollToTop />
       <Fade bottom cascade>
         <section className="about section">
           <div className="container">

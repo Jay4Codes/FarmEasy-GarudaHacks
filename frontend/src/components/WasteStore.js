@@ -2,11 +2,13 @@ import React from "react";
 import Footer from "./Footer";
 import Header from "./Header";
 import Fade from "react-reveal";
+import ScrollToTop from "./ScrollToTop";
 
 function WasteStore() {
   return (
     <div>
       <Header />
+      <ScrollToTop />
       <Fade bottom cascade>
         <section className="products section">
           <div className="container">

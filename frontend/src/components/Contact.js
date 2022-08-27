@@ -2,11 +2,13 @@ import React from "react";
 import { Fade } from "react-reveal";
 import Footer from "./Footer";
 import Header from "./Header";
+import ScrollToTop from "./ScrollToTop";
 
 function Contact() {
   return (
     <div>
       <Header />
+      <ScrollToTop />
       <section className="page-wrapper">
         <Fade bottom cascade>
           <div className="contact-section">

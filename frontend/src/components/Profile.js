@@ -1,11 +1,13 @@
 import React from "react";
 import Footer from "./Footer";
 import Header from "./Header";
+import ScrollToTop from "./ScrollToTop";
 
 function Profile() {
   return (
     <div>
       <Header />
+      <ScrollToTop />
       <div className="dashboard-wrapper dashboard-user-profile">
         <div className="media">
           <div className="pull-left text-center" href="#!">

@@ -2,11 +2,13 @@ import React from "react";
 import Header from "./Header";
 import Footer from "./Footer";
 import { Fade } from "react-reveal";
+import ScrollToTop from "./ScrollToTop";
 
 function ProductStore() {
   return (
     <div>
       <Header />
+      <ScrollToTop />
       <Fade bottom cascade>
         <section className="products section">
           <div className="container">
