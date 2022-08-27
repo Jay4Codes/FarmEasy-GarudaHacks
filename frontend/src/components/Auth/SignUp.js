@@ -1,7 +1,10 @@
+// React Imports
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
-import hori_logo from "../assets/images/hori_logo.png";
+
+// Image Imports
+import hori_logo from "../../assets/images/hori_logo.png";
 
 function SignUp() {
   let navigate = useNavigate();
@@ -15,7 +18,7 @@ function SignUp() {
   };
   const signup = async (e) => {
     e.preventDefault();
-    const response = await fetch("http://localhost:5000/api/buyer/register", {
+    const response = await fetch("http://localhost:5000/api/farmer/register", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -32,7 +35,7 @@ function SignUp() {
     if (json.success) {
       localStorage.setItem("token", json.authtoken);
       alert("You have successfully registered");
-      navigate("/loginbuyer");
+      navigate("/login");
     }
   };
   return (
@@ -43,7 +46,7 @@ function SignUp() {
             <div className="col-md-6 col-md-offset-3">
               <div className="block text-center">
                 <img src={hori_logo} alt="logo" />
-                <h2 className="text-center">Create Your Buyer's Account</h2>
+                <h2 className="text-center">Create Your Account</h2>
                 <form className="text-left clearfix">
                   <div className="form-group">
                     <input
@@ -106,7 +109,7 @@ function SignUp() {
                   </div>
                 </form>
                 <p className="mt-20">
-                  Already have an account ?
+                  Already hava an account ?
                   <Link to="/login" className="link">
                     {" "}
                     Login

@@ -1,38 +1,34 @@
+// React Imports
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
-import { useNavigate } from "react-router-dom";
-import hori_logo from "../assets/images/hori_logo.png";
+import { Link, useNavigate } from "react-router-dom";
 
-function SignUp() {
+// Image Imports
+import hori_logo from "../../assets/images/hori_logo.png";
+
+function Login() {
   let navigate = useNavigate();
-  const [credentials, setCredentials] = useState({
-    email: "",
-    password: "",
-    phone: "",
-  });
+  const [credentials, setCredentials] = useState({ email: "", password: "" });
   const onChange = (e) => {
     setCredentials({ ...credentials, [e.target.name]: e.target.value });
   };
-  const signup = async (e) => {
+  const login = async (e) => {
     e.preventDefault();
-    const response = await fetch("http://localhost:5000/api/farmer/register", {
+    const response = await fetch("http://localhost:5000/api/farmer/login", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        name: credentials.name,
         email: credentials.email,
         password: credentials.password,
-        phone: credentials.phone,
-        address: credentials.address,
       }),
     });
     const json = await response.json();
     if (json.success) {
       localStorage.setItem("token", json.authtoken);
-      alert("You have successfully registered");
-      navigate("/login");
+      navigate("/profile");
+    } else {
+      alert("Invalid credentials");
     }
   };
   return (
@@ -43,18 +39,8 @@ function SignUp() {
             <div className="col-md-6 col-md-offset-3">
               <div className="block text-center">
                 <img src={hori_logo} alt="logo" />
-                <h2 className="text-center">Create Your Account</h2>
+                <h2 className="text-center">Welcome Back</h2>
                 <form className="text-left clearfix">
-                  <div className="form-group">
-                    <input
-                      type="text"
-                      className="form-control"
-                      placeholder="Username"
-                      name="name"
-                      value={credentials.name}
-                      onChange={onChange}
-                    />
-                  </div>
                   <div className="form-group">
                     <input
                       type="email"
@@ -75,41 +61,21 @@ function SignUp() {
                       onChange={onChange}
                     />
                   </div>
-                  <div className="form-group">
-                    <input
-                      type="text"
-                      className="form-control"
-                      placeholder="Address"
-                      name="address"
-                      value={credentials.address}
-                      onChange={onChange}
-                    />
-                  </div>
-                  <div className="form-group">
-                    <input
-                      type="text"
-                      className="form-control"
-                      placeholder="Phone"
-                      name="phone"
-                      value={credentials.phone}
-                      onChange={onChange}
-                    />
-                  </div>
                   <div className="text-center">
                     <button
                       type="submit"
                       className="btn btn-main text-center"
-                      onClick={signup}
+                      onClick={login}
                     >
-                      Sign In
+                      Login
                     </button>
                   </div>
                 </form>
                 <p className="mt-20">
-                  Already hava an account ?
-                  <Link to="/login" className="link">
+                  New to this site ?
+                  <Link to="/signup" className="link">
                     {" "}
-                    Login
+                    Create New Account
                   </Link>
                 </p>
               </div>
@@ -121,4 +87,4 @@ function SignUp() {
   );
 }
 
-export default SignUp;
+export default Login;

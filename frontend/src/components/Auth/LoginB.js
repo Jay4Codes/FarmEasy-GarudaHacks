@@ -1,6 +1,9 @@
+// React Imports
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import hori_logo from "../assets/images/hori_logo.png";
+
+// Image Imports
+import hori_logo from "../../assets/images/hori_logo.png";
 
 function LoginB() {
   let navigate = useNavigate();
