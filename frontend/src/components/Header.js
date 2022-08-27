@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import hori_logo from "../assets/images/hori_logo.png";
 
 function Header() {
   return (
@@ -16,7 +17,7 @@ function Header() {
             <div className="col-md-4 col-xs-12 col-sm-4">
               <div className="logo text-center">
                 <Link to="/">
-                  <img src="" alt="logo" />
+                  <img src={hori_logo} alt="logo" />
                 </Link>
               </div>
             </div>

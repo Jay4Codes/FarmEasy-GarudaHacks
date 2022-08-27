@@ -1,29 +1,39 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 
 function SignUp() {
-  let navigate = useNavigate()
-  const [credentials, setCredentials] = useState({email: "", password: "", phone : ""})
-  const onChange = (e) =>{
-    setCredentials({...credentials, [e.target.name]: e.target.value})
-}
+  let navigate = useNavigate();
+  const [credentials, setCredentials] = useState({
+    email: "",
+    password: "",
+    phone: "",
+  });
+  const onChange = (e) => {
+    setCredentials({ ...credentials, [e.target.name]: e.target.value });
+  };
   const signup = async (e) => {
-    e.preventDefault()
+    e.preventDefault();
     const response = await fetch("http://localhost:5000/api/buyer/register", {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({ name: credentials.name ,email: credentials.email, password: credentials.password, phone : credentials.phone, address: credentials.address})
-    })
-      const json = await response.json()
-      if(json.success){
-        localStorage.setItem('token', json.authtoken)
-        alert('You have successfully registered')
-        navigate('/loginbuyer')
-      }
-  }
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        name: credentials.name,
+        email: credentials.email,
+        password: credentials.password,
+        phone: credentials.phone,
+        address: credentials.address,
+      }),
+    });
+    const json = await response.json();
+    if (json.success) {
+      localStorage.setItem("token", json.authtoken);
+      alert("You have successfully registered");
+      navigate("/loginbuyer");
+    }
+  };
   return (
     <div>
       <section className="signin-page account">
@@ -84,13 +94,17 @@ function SignUp() {
                     />
                   </div>
                   <div className="text-center">
-                    <button type="submit" className="btn btn-main text-center" onClick={signup}>
+                    <button
+                      type="submit"
+                      className="btn btn-main text-center"
+                      onClick={signup}
+                    >
                       Sign In
                     </button>
                   </div>
                 </form>
                 <p className="mt-20">
-                  Already hava an account ?<Link to="/login"> Login</Link>
+                  Already have an account ?<Link to="/login"> Login</Link>
                 </p>
               </div>
             </div>

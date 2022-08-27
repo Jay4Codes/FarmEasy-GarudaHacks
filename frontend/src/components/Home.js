@@ -5,6 +5,12 @@ import "./Home.css";
 import land from "../assets/images/banner/land.png";
 import waste from "../assets/images/banner/waste.png";
 import { useState, useEffect } from "react";
+import banner_sell from "../assets/images/farmwaste/banner_sell.png";
+import banner_buy from "../assets/images/farmwaste/banner_buy.png";
+import banner_buy_prod from "../assets/images/farmproducts/banner_buy_prod.png";
+import cow_dung from "../assets/images/farmwaste/cow_dung.jpg";
+import rice_straw from "../assets/images/farmwaste/rice_straw.png";
+import pig_manure from "../assets/images/farmwaste/pig_manure.png";
 
 function Home() {
   const [parallax, setParallax] = useState(0);
@@ -60,44 +66,39 @@ function Home() {
           <img src={waste} id="rocks" />
         </section>
       </section>
+
       <div className="sec">
         <section className="product-category section">
           <div className="container">
             <div className="row">
               <div className="col-md-12">
                 <div className="title text-center">
-                  <h2>Product Category</h2>
+                  <h2>Our Stores</h2>
                 </div>
               </div>
               <div className="col-md-6">
                 <div className="category-box">
-                  <a href="#!">
-                    <img src="images/shop/category/category-1.jpg" alt="" />
-                    <div className="content">
-                      <h3>Insecticide Sales</h3>
-                      <p>Organic</p>
-                    </div>
-                  </a>
+                  <img src={banner_sell} alt="" />
+                  <div className="content">
+                    <h3>Sell Farm Waste</h3>
+                    <p>To Industries/Buyers</p>
+                  </div>
                 </div>
                 <div className="category-box">
-                  <a href="#!">
-                    <img src="images/shop/category/category-2.jpg" alt="" />
-                    <div className="content">
-                      <h3>Rice Straw Sale</h3>
-                      <p>Organic</p>
-                    </div>
-                  </a>
+                  <img src={banner_buy} alt="" />
+                  <div className="content">
+                    <h3>Buy Agricultural Waste</h3>
+                    <p>From Trusted Farmers</p>
+                  </div>
                 </div>
               </div>
               <div className="col-md-6">
                 <div className="category-box category-box-2">
-                  <a href="#!">
-                    <img src="images/shop/category/category-3.jpg" alt="" />
-                    <div className="content">
-                      <h3>Manure</h3>
-                      <p>Discount</p>
-                    </div>
-                  </a>
+                  <img src={banner_buy_prod} alt="" />
+                  <div className="content">
+                    <h3>Buy Farm Products</h3>
+                    <p>From Tokens</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -108,7 +109,7 @@ function Home() {
           <div className="container">
             <div className="row">
               <div className="title text-center">
-                <h2>Trendy Products</h2>
+                <h2>Sell Your Agricultural Waste</h2>
               </div>
             </div>
             <div className="row">
@@ -118,7 +119,7 @@ function Home() {
                     <span className="bage">Sale</span>
                     <img
                       className="img-responsive"
-                      src="images/shop/products/product-1.jpg"
+                      src={rice_straw}
                       alt="product-img"
                     />
                     <div className="preview-meta">
@@ -157,7 +158,7 @@ function Home() {
                   <div className="product-thumb">
                     <img
                       className="img-responsive"
-                      src="images/shop/products/product-2.jpg"
+                      src={pig_manure}
                       alt="product-img"
                     />
                     <div className="preview-meta">
@@ -196,7 +197,7 @@ function Home() {
                   <div className="product-thumb">
                     <img
                       className="img-responsive"
-                      src="images/shop/products/product-3.jpg"
+                      src={cow_dung}
                       alt="product-img"
                     />
                     <div className="preview-meta">
@@ -224,7 +225,7 @@ function Home() {
                   </div>
                   <div className="product-content">
                     <h4>
-                      <a href="product-single.html">Cow Dung</a>
+                      <a href="product-single.html">Cow Dung Cakes</a>
                     </h4>
                     <p className="price">$230</p>
                   </div>
