@@ -1,8 +1,29 @@
 // React Imports
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Fade } from "react-reveal";
 
 function ListWaste() {
+
+  const [value, setValue] = useState({name : "", quantity : 0})
+
+  const onChange = (e) =>{
+    setValue({...value,[e.target.name]: e.target.value})
+  }
+
+  const submitData = async()=>{
+    const res = await fetch ("http://localhost:5000/api/waste/postwaste",{
+      method : "POST",
+      headers: {
+        "Content-type" : "application/json",
+        'auth-token' : localStorage.getItem('token')
+      },
+      body : JSON.stringify({name : value.name, quantity : value.quantity, price : 100})
+    }
+    )
+    const json = await res.json()
+    console.log(json);
+  } 
+
   return (
     <div>
       <Fade bottom cascade>
@@ -21,6 +42,9 @@ function ListWaste() {
                           className="form-control"
                           id="product_name"
                           placeholder="Product Name"
+                          name="name"
+                          value={value.name}
+                          onChange={onChange}
                         />
                       </div>
                       <div className="form-group">
@@ -30,6 +54,9 @@ function ListWaste() {
                           className="form-control"
                           id="quantity"
                           placeholder="Quantity"
+                          name="quantity"
+                          value={value.quantity}
+                          onChange={onChange}
                         />
                       </div>
                       <div className="form-group">
@@ -42,7 +69,7 @@ function ListWaste() {
                         />
                       </div>
                       <div className="form-group">
-                        <button type="submit" className="btn btn-main">
+                        <button type="submit" className="btn btn-main" onClick={submitData}>
                           Submit
                         </button>
                       </div>
