@@ -11,7 +11,7 @@ function Header() {
             <div className="col-md-4 col-xs-12 col-sm-4">
               <div className="contact-number">
                 <i className="tf-ion-ios-telephone"></i>
-                <span>Dummy Text</span>
+                <span>Get In Touch</span>
               </div>
             </div>
             <div className="col-md-4 col-xs-12 col-sm-4">

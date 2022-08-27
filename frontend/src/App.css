@@ -67,7 +67,7 @@ input[type=email],
 input[type=password],
 input[type=text],
 input[type=tel] {
-    border-radius: 0;
+    border-radius: 8px;
     box-shadow: none;
     height: 45px;
     outline: none;
@@ -85,7 +85,7 @@ input[type=tel]:focus {
 
 .form-control {
     box-shadow: none;
-    border-radius: 0;
+    border-radius: 8px;
 }
 
 .form-control:focus {
@@ -479,7 +479,7 @@ input[type=tel]:focus {
 }
 
 .dropdown-slide .dropdown-menu {
-    border-radius: 0;
+    border-radius: 4px;
     opacity: 1;
     visibility: visible;
     position: absolute;
@@ -547,7 +547,6 @@ input[type=tel]:focus {
 }
 
 .tabCommon .nav-tabs a {
-    border-radius: 0;
     background: #f9f9f9;
 }
 
@@ -1465,7 +1464,7 @@ input[type=tel]:focus {
     color: #000;
     font-size: 12px;
     border: 1px solid #e5e5e5;
-    border-radius: 0px;
+    border-radius: 4px;
     box-shadow: none;
 }
 
@@ -2038,7 +2037,7 @@ input[type=tel]:focus {
 .comment-reply-form input,
 .comment-reply-form textarea {
     height: 35px;
-    border-radius: 0;
+    border-radius: 8px;
     box-shadow: none;
 }
 
@@ -2298,7 +2297,7 @@ input[type=tel]:focus {
 .account .block form input[type=email],
 .account .block form input[type=password],
 .account .block form input[type=text] {
-    border-radius: 0;
+    border-radius: 8px;
     box-shadow: none;
 }
 
@@ -2337,7 +2336,7 @@ input[type=tel]:focus {
 }
 
 .checkout-form .form-group input {
-    border-radius: 0;
+    border-radius: 8px;
     display: block;
     padding: 6px 10px 5px 100px;
     -moz-appearance: none;
@@ -2570,7 +2569,7 @@ input[type=tel]:focus {
     height: 38px;
     font-family: "Open Sans", sans-serif;
     font-size: 14px;
-    border-radius: 0;
+    border-radius: 8px;
 }
 
 .contact-form input:hover,
@@ -2586,7 +2585,7 @@ input[type=tel]:focus {
     margin: 0;
     background: #2fe514;
     color: #fff;
-    border-radius: 0;
+    border-radius: 8px;
 }
 
 .contact-form textarea.form-control {

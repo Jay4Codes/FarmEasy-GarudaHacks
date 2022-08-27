@@ -33,11 +33,6 @@ function WasteStore() {
                   <div className="preview-meta">
                     <ul>
                       <li>
-                        <span data-toggle="modal" data-target="#product-modal">
-                          <i className="tf-ion-ios-search-strong"></i>
-                        </span>
-                      </li>
-                      <li>
                         <a href="#!">
                           <i className="tf-ion-ios-heart"></i>
                         </a>
@@ -69,11 +64,6 @@ function WasteStore() {
                   <div className="preview-meta">
                     <ul>
                       <li>
-                        <span data-toggle="modal" data-target="#product-modal">
-                          <i className="tf-ion-ios-search-strong"></i>
-                        </span>
-                      </li>
-                      <li>
                         <a href="#">
                           <i className="tf-ion-ios-heart"></i>
                         </a>
@@ -104,11 +94,6 @@ function WasteStore() {
                   />
                   <div className="preview-meta">
                     <ul>
-                      <li>
-                        <span data-toggle="modal" data-target="#product-modal">
-                          <i className="tf-ion-ios-search-strong"></i>
-                        </span>
-                      </li>
                       <li>
                         <a href="#">
                           <i className="tf-ion-ios-heart"></i>
