@@ -42,7 +42,6 @@ function ListWaste() {
                         />
                       </div>
                       <div className="form-group">
-                        <label for="price">Price</label>
                         <button type="submit" className="btn btn-main">
                           Submit
                         </button>
