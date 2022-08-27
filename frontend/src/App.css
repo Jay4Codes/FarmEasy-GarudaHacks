@@ -6,6 +6,17 @@ body {
     -webkit-font-smoothing: antialiased;
     overflow-x: hidden;
     scroll-behavior: smooth;
+
+}
+
+::-moz-selection {
+    background: #2fe514;
+    color: #fff;
+}
+
+::selection {
+    background: #2fe514;
+    color: #fff;
 }
 
 p {

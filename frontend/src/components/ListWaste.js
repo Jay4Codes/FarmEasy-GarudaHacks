@@ -108,7 +108,7 @@ function ListWaste() {
                               />
                             </div>
                             <a
-                              href="confirmation.html"
+                              href="https://garudahacks.com/"
                               className="btn btn-main mt-20"
                             >
                               Place Order
@@ -128,12 +128,12 @@ function ListWaste() {
                           <img
                             className="media-object"
                             src="images/shop/cart/cart-1.jpg"
-                            alt="Image"
+                            alt="cart-1"
                           />
                         </a>
                         <div className="media-body">
                           <h4 className="media-heading">
-                            <a href="product-single.html">
+                            <a href="https://garudahacks.com/">
                               Ambassador Heritage 1921
                             </a>
                           </h4>
@@ -147,7 +147,7 @@ function ListWaste() {
                           <a
                             data-toggle="modal"
                             data-target="#coupon-modal"
-                            href="#!"
+                            href="https://garudahacks.com/"
                           >
                             enter it here
                           </a>
@@ -168,7 +168,7 @@ function ListWaste() {
                         <span>$250</span>
                       </div>
                       <div className="verified-icon">
-                        <img src="images/shop/verified.png" />
+                        <img src="images/shop/verified.png" alt="verified" />
                       </div>
                     </div>
                   </div>

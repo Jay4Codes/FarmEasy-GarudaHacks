@@ -62,11 +62,6 @@ function Footer() {
                     <i className="tf-ion-social-twitter"></i>
                   </a>
                 </li>
-                <li>
-                  <a href="https://garudahacks.com/">
-                    <i className="tf-ion-social-pinterest"></i>
-                  </a>
-                </li>
               </ul>
             </div>
           </div>
