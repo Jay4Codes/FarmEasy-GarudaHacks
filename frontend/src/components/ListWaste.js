@@ -12,55 +12,33 @@ function ListWaste() {
               <div className="row">
                 <div className="col-md-8">
                   <div className="block billing-details">
-                    <h4 className="widget-title">Billing Details</h4>
+                    <h4 className="widget-title">List Your Waste</h4>
                     <form className="checkout-form">
                       <div className="form-group">
-                        <label for="full_name">Full Name</label>
+                        <label for="product_name">Product Name</label>
                         <input
                           type="text"
                           className="form-control"
-                          id="full_name"
-                          placeholder=""
+                          id="product_name"
+                          placeholder="Product Name"
                         />
                       </div>
                       <div className="form-group">
-                        <label for="user_address">Address</label>
+                        <label for="quantity">Quantity</label>
                         <input
-                          type="text"
+                          type="number"
                           className="form-control"
-                          id="user_address"
-                          placeholder=""
+                          id="quantity"
+                          placeholder="Quantity"
                         />
                       </div>
-                      <div className="checkout-country-code clearfix">
-                        <div className="form-group">
-                          <label for="user_post_code">Zip Code</label>
-                          <input
-                            type="text"
-                            className="form-control"
-                            id="user_post_code"
-                            name="zipcode"
-                            value=""
-                          />
-                        </div>
-                        <div className="form-group">
-                          <label for="user_city">City</label>
-                          <input
-                            type="text"
-                            className="form-control"
-                            id="user_city"
-                            name="city"
-                            value=""
-                          />
-                        </div>
-                      </div>
                       <div className="form-group">
-                        <label for="user_country">Country</label>
+                        <label for="image">Image</label>
                         <input
-                          type="text"
+                          type="file"
                           className="form-control"
-                          id="user_country"
-                          placeholder=""
+                          id="image"
+                          placeholder="Upload Your Image"
                         />
                       </div>
                     </form>
