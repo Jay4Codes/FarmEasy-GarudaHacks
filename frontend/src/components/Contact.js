@@ -1,7 +1,10 @@
+// React Imports
 import React from "react";
 import { Fade } from "react-reveal";
+
+// Component Imports
 import Footer from "./Footer";
-import Header from "./Header";
+import Header from "./Headers/Header";
 import ScrollToTop from "./ScrollToTop";
 
 function Contact() {

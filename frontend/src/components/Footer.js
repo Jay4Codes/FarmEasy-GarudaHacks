@@ -1,5 +1,8 @@
+// React Imports
 import React from "react";
 import { Link } from "react-router-dom";
+
+// Image Imports
 import hori_logo from "../assets/images/hori_logo.png";
 
 function Footer() {

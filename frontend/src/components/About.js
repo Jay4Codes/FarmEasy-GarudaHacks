@@ -1,11 +1,16 @@
+// React Imports
 import React from "react";
+import { Fade } from "react-reveal";
+
+// Component Imports
 import Footer from "./Footer";
-import Header from "./Header";
+import Header from "./Headers/Header";
+import ScrollToTop from "./ScrollToTop";
+
+// Images Imports
+import jay from "../assets/images/team/jay.png";
 import about_gif from "../assets/images/recycle.gif";
 import about_gif_2 from "../assets/images/ecommerce.gif";
-import jay from "../assets/images/team/jay.png";
-import { Fade } from "react-reveal";
-import ScrollToTop from "./ScrollToTop";
 
 function About() {
   return (

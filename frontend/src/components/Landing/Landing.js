@@ -1,18 +1,26 @@
+// React Imports
 import React from "react";
-import HeaderLanding from "./HeaderLanding";
-import Footer from "./Footer";
-import "./Home.css";
-import land from "../assets/images/banner/land.png";
-import waste from "../assets/images/banner/waste.png";
-import { useState, useEffect } from "react";
-import banner_sell from "../assets/images/farmwaste/banner_sell.png";
-import banner_buy from "../assets/images/farmwaste/banner_buy.png";
-import banner_buy_prod from "../assets/images/farmproducts/banner_buy_prod.png";
-import cow_dung from "../assets/images/farmwaste/cow_dung.jpg";
-import rice_straw from "../assets/images/farmwaste/rice_straw.png";
-import pig_manure from "../assets/images/farmwaste/pig_manure.png";
 import { Fade } from "react-reveal";
-import ScrollToTop from "./ScrollToTop";
+import { useState, useEffect } from "react";
+
+// Components Imports
+
+import Footer from "../Footer";
+import ScrollToTop from "../ScrollToTop";
+import HeaderLanding from "../Headers/HeaderLanding";
+
+// CSS Imports
+import "./Home.css";
+
+// Image Imports
+import land from "../../assets/images/banner/land.png";
+import waste from "../../assets/images/banner/waste.png";
+import cow_dung from "../../assets/images/farmwaste/cow_dung.jpg";
+import rice_straw from "../../assets/images/farmwaste/rice_straw.png";
+import pig_manure from "../../assets/images/farmwaste/pig_manure.png";
+import banner_buy from "../../assets/images/farmwaste/banner_buy.png";
+import banner_sell from "../../assets/images/farmwaste/banner_sell.png";
+import banner_buy_prod from "../../assets/images/farmproducts/banner_buy_prod.png";
 
 function Home() {
   const [parallax, setParallax] = useState(0);

@@ -1,6 +1,9 @@
+// React Imports
 import React from "react";
 import { Link } from "react-router-dom";
-import hori_logo from "../assets/images/hori_logo.png";
+
+//  Image Imports
+import hori_logo from "../../assets/images/hori_logo.png";
 
 function Header() {
   return (

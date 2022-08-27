@@ -1,18 +1,24 @@
+// React Imports
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
+// CSS Imports
 import "./App.css";
-import Home from "./components/Home";
+
+// Component Imports
+
 import About from "./components/About";
-import Login from "./components/Login";
-import LoginB from "./components/LoginB";
-import SignUp from "./components/SignUp";
-import SignUpB from "./components/SignUpB";
-import Landing from "./components/Landing";
 import Contact from "./components/Contact";
 import Profile from "./components/Profile";
 import NoMatch from "./components/NoMatch";
+import Home from "./components/Landing/Home";
+import Login from "./components/Auth/Login";
+import LoginB from "./components/Auth/LoginB";
+import SignUp from "./components/Auth/SignUp";
+import SignUpB from "./components/Auth/SignUpB";
 import ListWaste from "./components/ListWaste";
-import WasteStore from "./components/WasteStore";
-import ProductStore from "./components/ProductStore";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Landing from "./components/Landing/Landing";
+import WasteStore from "./components/Stores/WasteStore";
+import ProductStore from "./components/Stores/ProductStore";
 
 function App() {
   const { currentUser } = [];

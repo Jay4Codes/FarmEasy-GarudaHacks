@@ -1,6 +1,9 @@
+// React Imports
 import React from "react";
 import { Link } from "react-router-dom";
-import hori_logo from "../assets/images/hori_logo.png";
+
+// Image Imports
+import hori_logo from "../../assets/images/hori_logo.png";
 
 function Header() {
   return (
@@ -24,7 +27,9 @@ function Header() {
             <div className="col-md-4 col-xs-12 col-sm-4">
               <ul className="top-menu text-right list-inline">
                 <li>
-                  <Link to="/profile" className="link">Profile</Link>
+                  <Link to="/profile" className="link">
+                    Profile
+                  </Link>
                 </li>
                 <li className="dropdown search dropdown-slide">
                   <a
@@ -48,7 +53,9 @@ function Header() {
                   </ul>
                 </li>
                 <li>
-                  <Link to="/login" className="link">Log Out</Link>
+                  <Link to="/login" className="link">
+                    Log Out
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -79,20 +86,30 @@ function Header() {
             <div id="navbar" className="navbar-collapse collapse text-center">
               <ul className="nav navbar-nav">
                 <li className="dropdown ">
-                  <Link to="/" className="link">Home</Link>
+                  <Link to="/" className="link">
+                    Home
+                  </Link>
                 </li>
                 <li className="dropdown dropdown-slide">
-                  <Link to="/waste-store" className="link">Waste Store</Link>
+                  <Link to="/waste-store" className="link">
+                    Waste Store
+                  </Link>
                 </li>
                 <li className="dropdown dropdown-slide">
-                  <Link to="/product-store" className="link">Product Store</Link>
+                  <Link to="/product-store" className="link">
+                    Product Store
+                  </Link>
                 </li>
                 <li className="dropdown full-width dropdown-slide">
-                  <Link to="/about" className="link">About</Link>
+                  <Link to="/about" className="link">
+                    About
+                  </Link>
                 </li>
 
                 <li className="dropdown dropdown-slide">
-                  <Link to="/contact" className="link">Contact</Link>
+                  <Link to="/contact" className="link">
+                    Contact
+                  </Link>
                 </li>
               </ul>
             </div>

@@ -1,6 +1,9 @@
+// React Imports
 import React from "react";
+
+// Component Imports
 import Footer from "./Footer";
-import Header from "./Header";
+import Header from "./Headers/Header";
 import ScrollToTop from "./ScrollToTop";
 
 function Profile() {

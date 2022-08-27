@@ -1,4 +1,7 @@
+// React Imports
 import React from "react";
+
+// CSS Imports
 import "./ScrollToTop.css";
 
 function ScrollToTop() {

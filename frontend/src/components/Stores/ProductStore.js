@@ -1,8 +1,11 @@
+// React Imports
 import React from "react";
-import Header from "./Header";
-import Footer from "./Footer";
 import { Fade } from "react-reveal";
-import ScrollToTop from "./ScrollToTop";
+
+// Components Imports
+import Footer from "../Footer";
+import Header from "../Headers/Header";
+import ScrollToTop from "../ScrollToTop";
 
 function ProductStore() {
   return (
