@@ -6,8 +6,46 @@ import { Fade } from "react-reveal";
 import Footer from "../Footer";
 import Header from "../Headers/Header";
 import ScrollToTop from "../ScrollToTop";
+import insecticide_1 from '../../assets/images/farmproducts/insecticide_1.jpg'
+import insecticide_2 from '../../assets/images/farmproducts/insecticide_1.jpg'
 
 function ProductStore() {
+  const buyProduct1 = async(e) => {
+    e.preventDefault()
+    const response = await fetch('http://localhost:5000/api/farmer/buyproduct/6309032ce569509e27fc70d8', {
+      method: "PUT",
+      headers: {
+        'prod-id': '6308b3ece22ed5beda74b5d8',
+      }
+    })
+    const json = await response.json()
+    // console.log(json);
+    alert('You have bought insecticide, and your points are reduced by 150')
+  }
+  const buyProduct2 = async(e) => {
+    e.preventDefault()
+    const response = await fetch('http://localhost:5000/api/farmer/buyproduct/6309032ce569509e27fc70d8', {
+      method: "PUT",
+      headers: {
+        'prod-id': '6308b3ece22ed5beda74b5d8',
+      }
+    })
+    const json = await response.json()
+    // console.log(json);
+    alert('You have bought insecticide, and your points are reduced by 200')
+  }
+  const buyProduct3 = async(e) => {
+    e.preventDefault()
+    const response = await fetch('http://localhost:5000/api/farmer/buyproduct/6309032ce569509e27fc70d8', {
+      method: "PUT",
+      headers: {
+        'prod-id': '6308b3ece22ed5beda74b5d8',
+      }
+    })
+    const json = await response.json()
+    // console.log(json);
+    alert('You have bought insecticide, and your points are reduced by 250')
+  }
   return (
     <div>
       <Header />
@@ -24,7 +62,7 @@ function ProductStore() {
                     <span className="bage">Sale</span>
                     <img
                       className="img-responsive"
-                      src="images/shop/products/product-1.jpg"
+                      src={insecticide_1}
                       alt="product-img"
                     />
                     <div className="preview-meta">
@@ -35,9 +73,11 @@ function ProductStore() {
                           </a>
                         </li>
                         <li>
+                        <button onClick={buyProduct1}>
                           <a href="#!">
                             <i className="tf-ion-android-cart"></i>
                           </a>
+                        </button>
                         </li>
                       </ul>
                     </div>
@@ -55,7 +95,7 @@ function ProductStore() {
                   <div className="product-thumb">
                     <img
                       className="img-responsive"
-                      src="images/shop/products/product-2.jpg"
+                      src={insecticide_2}
                       alt="product-img"
                     />
                     <div className="preview-meta">
@@ -66,9 +106,11 @@ function ProductStore() {
                           </a>
                         </li>
                         <li>
-                          <a href="https://garudahacks.com/">
+                        <button onClick={buyProduct2}>
+                          <a href="#!">
                             <i className="tf-ion-android-cart"></i>
                           </a>
+                        </button>
                         </li>
                       </ul>
                     </div>
@@ -86,7 +128,7 @@ function ProductStore() {
                   <div className="product-thumb">
                     <img
                       className="img-responsive"
-                      src="images/shop/products/product-3.jpg"
+                      src={insecticide_1}
                       alt="product-img"
                     />
                     <div className="preview-meta">
@@ -97,9 +139,11 @@ function ProductStore() {
                           </a>
                         </li>
                         <li>
-                          <a href="https://garudahacks.com/">
+                        <button onClick={buyProduct3}>
+                          <a href="#!">
                             <i className="tf-ion-android-cart"></i>
                           </a>
+                        </button>
                         </li>
                       </ul>
                     </div>
