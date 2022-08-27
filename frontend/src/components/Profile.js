@@ -24,9 +24,9 @@ function Profile() {
       const json = await res.json()
       console.log("json",json);
       setData(json)
+      setLoading(false)
     }
     getData()
-    setLoading(false)
   }, [])
   
   setTimeout(() => {

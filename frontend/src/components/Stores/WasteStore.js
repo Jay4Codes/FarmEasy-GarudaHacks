@@ -106,8 +106,8 @@ function WasteStore() {
                 </div>
                 <div className="col-md-4 col-sm-6 col-xs-12">
                   <div className="product-short-details">
-                    <h2 className="product-title">{props.name}</h2>
-                    <p className="product-price">{props.price}</p>
+                    <h2 className="product-title">asdasd</h2>
+                    <p className="product-price">asd</p>
                     <input type="number" placeholder="Quantity" />
                   </div>
                 </div>
@@ -129,19 +129,7 @@ function WasteStore() {
         <ScrollToTop />
         <Fade bottom cascade>
           {modal ? (
-            <>
-              <div
-                style={{
-                  position: "fixed",
-                  heigth: "200px",
-                  width: "200px",
-                  backgroundColor: "red",
-                  top: "200px",
-                }}
-              >
-                asdads
-              </div>
-            </>
+            <itemModal/>
           ) : (
             <></>
           )}
