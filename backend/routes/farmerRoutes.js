@@ -101,6 +101,7 @@ router.put('/buyproduct/:id',
 async(req, res) => {
     try {
       const farmer = await farmers.findById(req.params.id)
+      console.log(farmer);
       const product = await products.findById(req.header('prod-id'))
       const prodprice = product.tokenprice
       const farmertoken = farmer.token

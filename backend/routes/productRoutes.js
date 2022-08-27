@@ -5,10 +5,6 @@ const router = express.Router();
 router.post('/addproduct', 
 async(req, res)=>{
   let success = false;
-//   const errors = validationResult(req);
-//   if(!errors.isEmpty()){
-//     res.status(400).json({success, errors : errors.array()})
-//   }
     try{
 
       let product = await products.create({

@@ -1,8 +1,45 @@
 import React from "react";
 import Header from "./Header";
 import Footer from "./Footer";
+import banner_buy_prod from "../assets/images/farmproducts/insecticide_1.jpg";
 
 function ProductStore() {
+  const buyProduct1 = async(e) => {
+    e.preventDefault()
+    const response = await fetch('http://localhost:5000/api/farmer/buyproduct/6309032ce569509e27fc70d8', {
+      method: "PUT",
+      headers: {
+        'prod-id': '6308b3ece22ed5beda74b5d8',
+      }
+    })
+    const json = await response.json()
+    // console.log(json);
+    alert('You have bought insecticide, and your points are reduced by 150')
+  }
+  const buyProduct2 = async(e) => {
+    e.preventDefault()
+    const response = await fetch('http://localhost:5000/api/farmer/buyproduct/6309032ce569509e27fc70d8', {
+      method: "PUT",
+      headers: {
+        'prod-id': '6308b3ece22ed5beda74b5d8',
+      }
+    })
+    const json = await response.json()
+    // console.log(json);
+    alert('You have bought insecticide, and your points are reduced by 200')
+  }
+  const buyProduct3 = async(e) => {
+    e.preventDefault()
+    const response = await fetch('http://localhost:5000/api/farmer/buyproduct/6309032ce569509e27fc70d8', {
+      method: "PUT",
+      headers: {
+        'prod-id': '6308b3ece22ed5beda74b5d8',
+      }
+    })
+    const json = await response.json()
+    // console.log(json);
+    alert('You have bought insecticide, and your points are reduced by 250')
+  }
   return (
     <div>
       <Header />
@@ -27,7 +64,7 @@ function ProductStore() {
                   <span className="bage">Sale</span>
                   <img
                     className="img-responsive"
-                    src="images/shop/products/product-1.jpg"
+                    src={banner_buy_prod}
                     alt="product-img"
                   />
                   <div className="preview-meta">
@@ -38,18 +75,20 @@ function ProductStore() {
                         </a>
                       </li>
                       <li>
-                        <a href="#!">
-                          <i className="tf-ion-android-cart"></i>
-                        </a>
+                        <button onClick={buyProduct1}>
+                          <a href="#!">
+                            <i className="tf-ion-android-cart"></i>
+                          </a>
+                        </button>
                       </li>
                     </ul>
                   </div>
                 </div>
                 <div className="product-content">
                   <h4>
-                    <a href="product-single.html">Reef Boardsport</a>
+                    <a href="product-single.html">Calium Oxide</a>
                   </h4>
-                  <p className="price">$200</p>
+                  <p className="price">$150</p>
                 </div>
               </div>
             </div>
@@ -58,7 +97,7 @@ function ProductStore() {
                 <div className="product-thumb">
                   <img
                     className="img-responsive"
-                    src="images/shop/products/product-2.jpg"
+                    src={banner_buy_prod}
                     alt="product-img"
                   />
                   <div className="preview-meta">
@@ -69,16 +108,18 @@ function ProductStore() {
                         </a>
                       </li>
                       <li>
-                        <a href="https://garudahacks.com/">
-                          <i className="tf-ion-android-cart"></i>
-                        </a>
+                      <button onClick={buyProduct2}>
+                          <a href="#!">
+                            <i className="tf-ion-android-cart"></i>
+                          </a>
+                        </button>
                       </li>
                     </ul>
                   </div>
                 </div>
                 <div className="product-content">
                   <h4>
-                    <a href="product-single.html">Rainbow Shoes</a>
+                    <a href="product-single.html">Chlordane</a>
                   </h4>
                   <p className="price">$200</p>
                 </div>
@@ -89,15 +130,17 @@ function ProductStore() {
                 <div className="product-thumb">
                   <img
                     className="img-responsive"
-                    src="images/shop/products/product-3.jpg"
+                    src={banner_buy_prod}
                     alt="product-img"
                   />
                   <div className="preview-meta">
                     <ul>
                       <li>
-                        <a href="https://garudahacks.com/">
-                          <i className="tf-ion-ios-heart"></i>
-                        </a>
+                      <button onClick={buyProduct3}>
+                          <a href="#!">
+                            <i className="tf-ion-android-cart"></i>
+                          </a>
+                        </button>
                       </li>
                       <li>
                         <a href="https://garudahacks.com/">
@@ -109,9 +152,9 @@ function ProductStore() {
                 </div>
                 <div className="product-content">
                   <h4>
-                    <a href="product-single.html">Strayhorn SP</a>
+                    <a href="product-single.html">Endosulfan</a>
                   </h4>
-                  <p className="price">$230</p>
+                  <p className="price">$250</p>
                 </div>
               </div>
             </div>
