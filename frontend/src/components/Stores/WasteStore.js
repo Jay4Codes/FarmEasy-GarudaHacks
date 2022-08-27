@@ -151,8 +151,6 @@ function WasteStore() {
             </div>
           </section>
         </Fade>
-
-        <itemModal name={waste.name} price={waste.price} />
         <Footer />
       </div>
     );
