@@ -117,10 +117,12 @@ async(req, res) => {
     )
     
     router.get('/getfarmerdetails',
+    fetchFarmer,
     async(req, res) => {
       try {
-        const farmer = await farmers.findById(req.header('id'))
-        res.send(farmer)
+        const farmer = await farmers.findById(req.farmer.id)
+        console.log(farmer);
+        res.json(farmer)
       } catch (error) {
       console.log(error);   
       res.json({status : 'error', error : error})

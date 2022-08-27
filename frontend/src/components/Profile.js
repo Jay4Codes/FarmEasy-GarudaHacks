@@ -1,5 +1,5 @@
 // React Imports
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Fade } from "react-reveal";
 
 // Component Imports
@@ -8,6 +8,31 @@ import Header from "./Headers/Header";
 import ScrollToTop from "./ScrollToTop";
 
 function Profile() {
+
+  const [loading, setLoading] = useState(true)  
+  const [data, setData] = useState()
+
+  useEffect(() => {
+    const getData = async () => {
+      const res = await fetch("http://localhost:5000/api/farmer/getfarmerdetails",{
+        method : "GET",
+        headers : {
+          "Content-Type" : "application/json",
+          "auth-token" : localStorage.getItem('token') 
+        }
+      })
+      const json = await res.json()
+      console.log("json",json);
+      setData(json)
+    }
+    getData()
+    setLoading(false)
+  }, [])
+  
+  setTimeout(() => {
+    console.log(data);
+  }, 3000);
+
   return (
     <div>
       <Header />
@@ -25,28 +50,54 @@ function Profile() {
                 Change Image
               </a>
             </div>
+            {loading ? 
+              <div className="media-body">
+              <ul className="user-profile-list">
+                <li>
+                  <span>Full Name:</span>
+                </li>
+                <li>
+                  <span>Country:</span>
+                </li>
+                <li>
+                  <span>Email:</span>
+                </li>
+                <li>
+                  <span>Phone:</span>
+                </li>
+                <li>
+                  <span>Address:</span>
+                </li>
+                <li>
+                  <span>Tokens:</span>
+                </li>
+              </ul>
+            </div> :
             <div className="media-body">
               <ul className="user-profile-list">
                 <li>
-                  <span>Full Name:</span>Jay Jain
+                  <span>Full Name:</span>{data.name}
                 </li>
                 <li>
-                  <span>Country:</span>India
+                  <span>Country:</span>Phillipines
                 </li>
                 <li>
-                  <span>Email:</span>jay4emails@gmail.com
+                  <span>Email:</span>{data.email}
                 </li>
                 <li>
-                  <span>Phone:</span>+91 9867466628
+                  <span>Phone:</span>{data.phone}
                 </li>
                 <li>
-                  <span>Address:</span>Mumbai, India
+                  <span>Address:</span>{data.address}
                 </li>
                 <li>
-                  <span>Tokens:</span>200
+                  <span>Tokens:</span>{data.token}
                 </li>
               </ul>
             </div>
+
+            }
+            
           </div>
         </div>
       </Fade>

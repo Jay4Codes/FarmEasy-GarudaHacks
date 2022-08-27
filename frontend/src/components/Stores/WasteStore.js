@@ -29,6 +29,18 @@ function WasteStore() {
     getWaste()
   }, [modal])
 
+  const purchaseProduct = async ()=>{
+    const res = await fetch ("http://localhost:5000/api/waste/buywaste",{
+      method : 'PATCH',
+      headers : {
+        "Content-type": "application/json",
+      },
+      // body : JSON.stringify({name : name, quantity : quantity})
+    })
+    const json = await res.json()
+
+  }
+
   const WasteItem = (props) =>{
     console.log(props);
     return(
