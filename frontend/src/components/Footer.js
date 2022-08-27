@@ -14,7 +14,7 @@ function Footer() {
                 Copyright &copy;2022, Designed &amp; Developed by Team MangoDB
               </p>
             </div>
-            <div className="col-md-6">
+            <div className="col-md-8">
               <ul className="footer-menu text-uppercase">
                 <li>
                   <Link to="/" className="link">
@@ -29,11 +29,6 @@ function Footer() {
                 <li>
                   <Link to="/product-store" className="link">
                     PRODUCT STORE
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/profile" className="link">
-                    PROFILE
                   </Link>
                 </li>
                 <li>
