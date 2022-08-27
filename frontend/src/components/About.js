@@ -9,8 +9,8 @@ import ScrollToTop from "./ScrollToTop";
 
 // Images Imports
 import jay from "../assets/images/team/jay.png";
-import about_gif from "../assets/images/recycle.gif";
-import about_gif_2 from "../assets/images/ecommerce.gif";
+import about_gif from "../assets/gifs/recycle.gif";
+import about_gif_2 from "../assets/gifs/ecommerce.gif";
 
 function About() {
   return (
