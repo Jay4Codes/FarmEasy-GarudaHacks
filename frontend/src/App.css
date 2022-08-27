@@ -715,7 +715,6 @@ input[type=tel]:focus {
 
 .top-header .top-menu>li>a {
     font-size: 15px;
-    padding: 0 8px;
 }
 
 .top-header .top-menu>li>a i {
@@ -2482,7 +2481,7 @@ input[type=tel]:focus {
 }
 
 .page-404 {
-    padding: 100px 0;
+    padding: 80px 0;
     text-align: center;
 }
 
@@ -2490,7 +2489,7 @@ input[type=tel]:focus {
     font-size: 300px;
     font-weight: bold;
     line-height: 300px;
-    margin-top: 30px;
+    margin-top: 10px;
 }
 
 @media (max-width: 480px) {
@@ -2674,7 +2673,7 @@ input[type=tel]:focus {
 }
 
 .footer .footer-menu li a {
-    font-size: 12px;
+    font-size: 14px;
 }
 
 .footer .copyright-text {
@@ -2705,8 +2704,23 @@ input[type=tel]:focus {
     color: #000000;
     border-radius: 20px;
     margin: 0 20px 0 20px !important;
+    transition: all 0.4s ease;
 }
 
 .link:hover {
     color: #2fe514;
+}
+
+.btn-link {
+    font-size: 16px;
+    text-decoration: none;
+    color: #000000;
+    border-radius: 20px;
+    margin: 0 10px 0 10px !important;
+    transition: all 0.4s ease;
+}
+
+.btn-link:hover {
+    color: #ffffff;
+    text-decoration: none;
 }

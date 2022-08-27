@@ -9,6 +9,7 @@ import Landing from "./components/Landing";
 import Contact from "./components/Contact";
 import Profile from "./components/Profile";
 import NoMatch from "./components/NoMatch";
+import ListWaste from "./components/ListWaste";
 import WasteStore from "./components/WasteStore";
 import ProductStore from "./components/ProductStore";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
@@ -29,9 +30,10 @@ function App() {
           <Route path="/home" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/signup" element={<SignUp />} />
           <Route path="/landing" element={<Landing />} />
           <Route path="/loginbuyer" element={<LoginB />} />
-          <Route path="/signup" element={<SignUp />} />
+          <Route path="/listwaste" element={<ListWaste />} />
           <Route path="/signupbuyer" element={<SignUpB />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/profile" element={<Profile />} />

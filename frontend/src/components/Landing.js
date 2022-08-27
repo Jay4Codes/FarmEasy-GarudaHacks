@@ -33,7 +33,7 @@ function Home() {
       console.log("Inside Event Scroll");
       let value = window.scrollY;
 
-      text.style.top = 50 + value * -0.1 + "%";
+      text.style.top = 50 + value * -0.02 + "%";
       bird2.style.top = value * -1.5 + "px";
       bird2.style.left = value * 2 + "px";
       bird1.style.top = value * -1.5 + "px";
