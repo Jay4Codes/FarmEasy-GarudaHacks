@@ -123,17 +123,7 @@ function Contact() {
                       </li>
                       <li>
                         <a href="#">
-                          <i className="tf-ion-social-dribbble-outline"></i>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <i className="tf-ion-social-googleplus-outline"></i>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <i className="tf-ion-social-pinterest-outline"></i>
+                          <i className="tf-ion-social-instagram"></i>
                         </a>
                       </li>
                     </ul>

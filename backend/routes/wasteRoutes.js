@@ -32,4 +32,41 @@ router.post('/postwaste',
     }
     )
 
+router.patch('/buywaste',
+    async(req, res)=>{
+        try{
+            const {name, quantity} = req.body
+            const waste = await wastes.findOne({name : name})
+            if(!waste){
+                res.status(404).send({
+                    message : "Error"
+                })
+            }else{
+                const temp = waste.quantity - quantity
+                await wastes.findOneAndUpdate({name  : name}, {quantity : temp})
+                res.send("Successfully Updates")
+            }
+        }catch(err){
+            console.log(err);
+        }
+    }
+)
+
+router.get('/getwaste',
+    async(req, res)=>{
+        try{
+            const waste = await wastes.find({})
+            if(!waste){
+                res.status(404).send({
+                    message : "Error"
+                })
+            }else{
+                res.send(waste)
+            }
+        }catch(err){
+            console.log(err);
+        }
+    }
+)
+
     module.exports = router;

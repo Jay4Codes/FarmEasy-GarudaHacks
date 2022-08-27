@@ -52,6 +52,9 @@ function Header() {
                     Log In
                   </Link>
                 </li>
+                <li>
+                  <div id="google_translate_element"></div>
+                </li>
               </ul>
             </div>
           </div>
