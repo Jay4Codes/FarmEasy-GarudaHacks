@@ -121,7 +121,6 @@ async(req, res) => {
     async(req, res) => {
       try {
         const farmer = await farmers.findById(req.farmer.id)
-        console.log(farmer);
         res.json(farmer)
       } catch (error) {
       console.log(error);   

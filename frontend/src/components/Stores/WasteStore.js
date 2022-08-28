@@ -40,12 +40,7 @@ function WasteStore() {
       body : JSON.stringify({name : name, quantity : value})
     });
     const json = await res.json();
-    alert(json)
   };
-
-  setTimeout(() => {
-    console.log(wastes);
-  }, 3000);
 
   const WasteItem = (props) => {
     // console.log(props);
@@ -128,7 +123,10 @@ function WasteStore() {
               <h2 className="product-title">{name}</h2>
               <p className="product-price">asd</p>
               <input type="number" placeholder="Quantity" value={value} onChange={(e)=>{setValue(e.target.value)}}/>
-              <button onClick={purchaseProduct} className="btn btn-main">Purchase</button>
+              <button onClick={()=>{
+                purchaseProduct()
+                setShow(false)
+              }} className="btn btn-main">Purchase</button>
             </div>
           </div>
         </Modal>
