@@ -85,7 +85,7 @@ function ProductStore() {
                   </div>
                   <div className="product-content">
                     <h4>
-                      <a href="product-single.html">Larvin</a>
+                      <a href="product-single.html">Bayer Larvin</a>
                     </h4>
                     <p className="price">$200</p>
                   </div>
