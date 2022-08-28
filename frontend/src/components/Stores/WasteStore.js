@@ -13,6 +13,8 @@ function WasteStore() {
   const [loading, setLoading] = useState(true);
   const [value, setValue] = useState(0)
   const [name, setName] = useState()
+  const [price, setPrice] = useState()
+  const [file, setFile] = useState()
 
   const [show, setShow] = React.useState(false);
 
@@ -64,6 +66,8 @@ function WasteStore() {
                 <li>
                   <button className="btn-primary" onClick={() => {
                     setName(props.name)
+                    setPrice(props.price)
+                    setFile(props.image)
                     setShow(true)
                     }}>
                     <i className="tf-ion-android-cart"></i>
@@ -115,13 +119,13 @@ function WasteStore() {
         <Modal show={show} onClose={() => setShow(false)}>
           <div className="col-md-8 col-sm-6 col-xs-12">
             <div className="modal-image">
-              <img className="img-responsive" src="" alt="item" />
+              <img className="img-responsive" src={file} alt="item" />
             </div>
           </div>
           <div className="col-md-4 col-sm-6 col-xs-12">
             <div className="product-short-details">
               <h2 className="product-title">{name}</h2>
-              <p className="product-price">asd</p>
+              <p className="product-price">{price}</p>
               <input type="number" placeholder="Quantity" value={value} onChange={(e)=>{setValue(e.target.value)}}/>
               <button onClick={()=>{
                 purchaseProduct()
