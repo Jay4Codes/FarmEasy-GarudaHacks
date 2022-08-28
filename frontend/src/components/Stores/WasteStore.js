@@ -11,6 +11,8 @@ import Modal from "./Modal";
 function WasteStore() {
   const [wastes, setWastes] = useState();
   const [loading, setLoading] = useState(true);
+  const [value, setValue] = useState(0)
+  const [name, setName] = useState()
 
   const [show, setShow] = React.useState(false);
 
@@ -27,7 +29,7 @@ function WasteStore() {
       setLoading(false);
     };
     getWaste();
-  }, []);
+  }, [show]);
 
   const purchaseProduct = async () => {
     const res = await fetch("http://localhost:5000/api/waste/buywaste", {
@@ -35,13 +37,18 @@ function WasteStore() {
       headers: {
         "Content-type": "application/json",
       },
-      // body : JSON.stringify({name : name, quantity : quantity})
+      body : JSON.stringify({name : name, quantity : value})
     });
     const json = await res.json();
+    alert(json)
   };
 
+  setTimeout(() => {
+    console.log(wastes);
+  }, 3000);
+
   const WasteItem = (props) => {
-    console.log(props);
+    // console.log(props);
     return (
       <div className="col-md-4">
         <div className="product-item">
@@ -49,7 +56,7 @@ function WasteStore() {
             <span className="bage">Sale</span>
             <img
               className="img-responsive"
-              src="images/shop/products/product-1.jpg"
+              src={props.image}
               alt="product-img"
             />
             <div className="preview-meta">
@@ -60,7 +67,10 @@ function WasteStore() {
                   </a>
                 </li>
                 <li>
-                  <button className="btn-primary" onClick={() => setShow(true)}>
+                  <button className="btn-primary" onClick={() => {
+                    setName(props.name)
+                    setShow(true)
+                    }}>
                     <i className="tf-ion-android-cart"></i>
                   </button>
                 </li>
@@ -82,7 +92,6 @@ function WasteStore() {
   if (loading) {
     return <div>Loading</div>;
   } else {
-    console.log(wastes);
     return (
       <div>
         <Header />
@@ -99,6 +108,7 @@ function WasteStore() {
                       name={waste.name}
                       price={waste.price}
                       quantity={waste.quantity}
+                      image = {waste.file}
                     />
                   );
                 })}
@@ -115,9 +125,10 @@ function WasteStore() {
           </div>
           <div className="col-md-4 col-sm-6 col-xs-12">
             <div className="product-short-details">
-              <h2 className="product-title">asdasd</h2>
+              <h2 className="product-title">{name}</h2>
               <p className="product-price">asd</p>
-              <input type="number" placeholder="Quantity" />
+              <input type="number" placeholder="Quantity" value={value} onChange={(e)=>{setValue(e.target.value)}}/>
+              <button onClick={purchaseProduct}>Purchase</button>
             </div>
           </div>
         </Modal>

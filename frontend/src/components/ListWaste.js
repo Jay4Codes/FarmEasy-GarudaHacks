@@ -1,10 +1,11 @@
 // React Imports
 import React, { useEffect, useState } from "react";
 import { Fade } from "react-reveal";
+import FileBase from 'react-file-base64';
 
 function ListWaste() {
 
-  const [value, setValue] = useState({name : "", quantity : 0})
+  const [value, setValue] = useState({name : "", quantity : 0, file : ""})
 
   const onChange = (e) =>{
     setValue({...value,[e.target.name]: e.target.value})
@@ -17,7 +18,7 @@ function ListWaste() {
         "Content-type" : "application/json",
         'auth-token' : localStorage.getItem('token')
       },
-      body : JSON.stringify({name : value.name, quantity : value.quantity, price : 100})
+      body : JSON.stringify({name : value.name, quantity : value.quantity, price : 100, file : value.file})
     }
     )
     const json = await res.json()
@@ -61,12 +62,7 @@ function ListWaste() {
                       </div>
                       <div className="form-group">
                         <label for="image">Image</label>
-                        <input
-                          type="file"
-                          className="form-control"
-                          id="image"
-                          placeholder="Upload Your Image"
-                        />
+                        <FileBase type="file" multiple={false} onDone={({ base64 }) => setValue({ ...value, file: base64 })} />
                       </div>
                       <div className="form-group">
                         <button type="submit" className="btn btn-main" onClick={submitData}>

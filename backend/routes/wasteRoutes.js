@@ -8,7 +8,7 @@ router.post('/postwaste',
     fetchFarmer,
     async(req, res)=>{
         try {
-            const {name, quantity, price} = req.body
+            const {name, quantity, price, file} = req.body
             const waste = await wastes.findOne({name : name})
             const farmer = await farmers.findById(req.farmer.id)
             const tokens = farmer.token + 10
@@ -17,7 +17,8 @@ router.post('/postwaste',
                 const newWaste = {
                     name : name,
                     quantity : quantity,
-                    price : price
+                    price : price,
+                    file : file
                 }
                 await wastes.create(newWaste)
                 res.send("Successfully Created")
@@ -44,7 +45,7 @@ router.patch('/buywaste',
             }else{
                 const temp = waste.quantity - quantity
                 await wastes.findOneAndUpdate({name  : name}, {quantity : temp})
-                res.send("Successfully Updates")
+                res.send("Successfully Updated")
             }
         }catch(err){
             console.log(err);
