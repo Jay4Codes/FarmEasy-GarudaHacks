@@ -128,7 +128,7 @@ function WasteStore() {
               <h2 className="product-title">{name}</h2>
               <p className="product-price">asd</p>
               <input type="number" placeholder="Quantity" value={value} onChange={(e)=>{setValue(e.target.value)}}/>
-              <button onClick={purchaseProduct}>Purchase</button>
+              <button onClick={purchaseProduct} className="btn btn-main">Purchase</button>
             </div>
           </div>
         </Modal>

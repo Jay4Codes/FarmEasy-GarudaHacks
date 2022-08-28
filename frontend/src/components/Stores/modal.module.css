@@ -10,6 +10,7 @@
   padding: 0 !important;
   justify-content: center;
   align-items: center;
+  overflow-y: hidden;
 }
 
 .modal {
@@ -27,13 +28,13 @@
 
 @media (max-width: 480px) {
   .modal {
-    width: 100%;
+    min-width: 80%;
   }
 }
 
 @media (max-width: 768px) {
   .modal {
-    width: 100%;
+    min-width: 80%;
   }
 }
 

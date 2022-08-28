@@ -9,7 +9,9 @@ const Modal = ({ show, onClose, children }) => {
   return (
     <div className={styles.modalWrapper}>
       <div className={styles.modal}>
-        <button onClick={onClose} className={`${styles.btnClose} btn-close`} />
+        <button onClick={onClose} className={`${styles.btnClose} btn-close`}>
+          <i className="btn tf-ion-close"></i>
+        </button>
         {children}
       </div>
     </div>
