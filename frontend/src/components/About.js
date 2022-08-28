@@ -27,9 +27,10 @@ function About() {
               <div className="col-md-6">
                 <h2 className="mt-40">What We Do?</h2>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius
-                  enim, accusantium repellat ex autem numquam iure officiis
-                  facere vitae itaque.
+                  FarmEasy was created to help farners and industries. We act as
+                  a raw material provider for the industries and also provide
+                  pesticides, insecticides, fertilisers, etc. to the farmers in
+                  return for the waste that they provide.
                 </p>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam
@@ -62,9 +63,10 @@ function About() {
               <div className="col-md-6">
                 <h2 className="mt-40">How We Do It?</h2>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius
-                  enim, accusantium repellat ex autem numquam iure officiis
-                  facere vitae itaque.
+                  We collect waste from farmers in and give tokens/credits in
+                  return using which they buy products according to their
+                  requirements. And this waste collected is given to the
+                  industries according to whoever requires what and how much.
                 </p>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam
