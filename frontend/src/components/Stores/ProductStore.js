@@ -7,7 +7,8 @@ import Footer from "../Footer";
 import Header from "../Headers/Header";
 import ScrollToTop from "../ScrollToTop";
 import insecticide_1 from '../../assets/images/farmproducts/insecticide_1.jpg'
-import insecticide_2 from '../../assets/images/farmproducts/insecticide_1.jpg'
+import insecticide_2 from '../../assets/images/farmproducts/insecticide_2.jpg'
+import compost from '../../assets/images/farmproducts/compost.jpg'
 
 function ProductStore() {
   const buyProduct1 = async(e) => {
@@ -84,7 +85,7 @@ function ProductStore() {
                   </div>
                   <div className="product-content">
                     <h4>
-                      <a href="product-single.html">Reef Boardsport</a>
+                      <a href="product-single.html">Larvin</a>
                     </h4>
                     <p className="price">$200</p>
                   </div>
@@ -97,6 +98,7 @@ function ProductStore() {
                       className="img-responsive"
                       src={insecticide_2}
                       alt="product-img"
+                      style={{heigth : "270px", width : "270px", margin : "auto"}}
                     />
                     <div className="preview-meta">
                       <ul>
@@ -117,7 +119,7 @@ function ProductStore() {
                   </div>
                   <div className="product-content">
                     <h4>
-                      <a href="product-single.html">Rainbow Shoes</a>
+                      <a href="product-single.html">Tata Tafgor</a>
                     </h4>
                     <p className="price">$200</p>
                   </div>
@@ -128,7 +130,7 @@ function ProductStore() {
                   <div className="product-thumb">
                     <img
                       className="img-responsive"
-                      src={insecticide_1}
+                      src={compost}
                       alt="product-img"
                     />
                     <div className="preview-meta">
@@ -147,10 +149,10 @@ function ProductStore() {
                         </li>
                       </ul>
                     </div>
-                  </div>
+                  </div> 
                   <div className="product-content">
                     <h4>
-                      <a href="product-single.html">Strayhorn SP</a>
+                      <a href="product-single.html">Vermi Compost</a>
                     </h4>
                     <p className="price">$230</p>
                   </div>
