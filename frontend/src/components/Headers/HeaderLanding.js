@@ -13,8 +13,7 @@ function Header() {
           <div className="row">
             <div className="col-md-4 col-xs-12 col-sm-4">
               <div className="contact-number">
-                <i className="tf-ion-ios-telephone"></i>
-                <span>Get In Touch</span>
+                <div id="google_translate_element"></div>
               </div>
             </div>
             <div className="col-md-4 col-xs-12 col-sm-4">
@@ -51,9 +50,6 @@ function Header() {
                   <Link to="/login" className="link">
                     Log In
                   </Link>
-                </li>
-                <li>
-                  <div id="google_translate_element"></div>
                 </li>
               </ul>
             </div>

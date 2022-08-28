@@ -11,10 +11,10 @@ import Modal from "./Modal";
 function WasteStore() {
   const [wastes, setWastes] = useState();
   const [loading, setLoading] = useState(true);
-  const [value, setValue] = useState(0)
-  const [name, setName] = useState()
-  const [price, setPrice] = useState()
-  const [file, setFile] = useState()
+  const [value, setValue] = useState(0);
+  const [name, setName] = useState();
+  const [price, setPrice] = useState();
+  const [file, setFile] = useState();
 
   const [show, setShow] = React.useState(false);
 
@@ -39,7 +39,7 @@ function WasteStore() {
       headers: {
         "Content-type": "application/json",
       },
-      body : JSON.stringify({name : name, quantity : value})
+      body: JSON.stringify({ name: name, quantity: value }),
     });
     const json = await res.json();
   };
@@ -51,11 +51,16 @@ function WasteStore() {
         <div className="product-item">
           <div className="product-thumb">
             <span className="bage">Sale</span>
-            <img
-              className="img-responsive"
-              src={props.image}
-              alt="product-img"
-            />
+            <div
+              className="product-img"
+              style={{ width: "400px", height: "400px" }}
+            >
+              <img
+                className="img-responsive"
+                src={props.image}
+                alt="product-img"
+              />
+            </div>
             <div className="preview-meta">
               <ul>
                 <li>
@@ -64,12 +69,15 @@ function WasteStore() {
                   </a>
                 </li>
                 <li>
-                  <button className="btn-primary" onClick={() => {
-                    setName(props.name)
-                    setPrice(props.price)
-                    setFile(props.image)
-                    setShow(true)
-                    }}>
+                  <button
+                    className="btn-primary"
+                    onClick={() => {
+                      setName(props.name);
+                      setPrice(props.price);
+                      setFile(props.image);
+                      setShow(true);
+                    }}
+                  >
                     <i className="tf-ion-android-cart"></i>
                   </button>
                 </li>
@@ -107,7 +115,7 @@ function WasteStore() {
                       name={waste.name}
                       price={waste.price}
                       quantity={waste.quantity}
-                      image = {waste.file}
+                      image={waste.file}
                     />
                   );
                 })}
@@ -119,18 +127,36 @@ function WasteStore() {
         <Modal show={show} onClose={() => setShow(false)}>
           <div className="col-md-8 col-sm-6 col-xs-12">
             <div className="modal-image">
-              <img className="img-responsive" src={file} alt="item" />
+              <img
+                className="img-responsive"
+                style={{ width: "600px" }}
+                src={file}
+                alt="item"
+              />
             </div>
           </div>
           <div className="col-md-4 col-sm-6 col-xs-12">
             <div className="product-short-details">
               <h2 className="product-title">{name}</h2>
               <p className="product-price">{price}</p>
-              <input type="number" placeholder="Quantity" value={value} onChange={(e)=>{setValue(e.target.value)}}/>
-              <button onClick={()=>{
-                purchaseProduct()
-                setShow(false)
-              }} className="btn btn-main">Purchase</button>
+              <input
+                type="number"
+                placeholder="Quantity"
+                value={value}
+                onChange={(e) => {
+                  setValue(e.target.value);
+                }}
+              />
+              <br />
+              <button
+                onClick={() => {
+                  purchaseProduct();
+                  setShow(false);
+                }}
+                className="btn btn-main"
+              >
+                Purchase
+              </button>
             </div>
           </div>
         </Modal>
