@@ -27,7 +27,7 @@ function WasteStore() {
       setLoading(false);
     };
     getWaste();
-  }, [modal]);
+  }, []);
 
   const purchaseProduct = async () => {
     const res = await fetch("http://localhost:5000/api/waste/buywaste", {
@@ -88,7 +88,6 @@ function WasteStore() {
         <Header />
         <ScrollToTop />
         <Fade bottom cascade>
-          {modal ? <itemModal /> : <></>}
           <section className="products section">
             <div className="container">
               <div className="row">
