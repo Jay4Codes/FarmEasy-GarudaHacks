@@ -9,6 +9,9 @@ import ScrollToTop from "./ScrollToTop";
 
 // Images Imports
 import jay from "../assets/images/team/jay.png";
+import hetvi from "../assets/images/team/hetvi.png";
+import jay_2 from "../assets/images/team/jay_2.png";
+import jainam from "../assets/images/team/jainam.png";
 import about_gif from "../assets/gifs/recycle.gif";
 import about_gif_2 from "../assets/gifs/ecommerce.gif";
 
@@ -27,22 +30,23 @@ function About() {
               <div className="col-md-6">
                 <h2 className="mt-40">What We Do?</h2>
                 <p>
+                  Indonesia being a major producer of agricultural products
+                  Farmers form the backbone of country. But they are the ones
+                  who suffer a lot too due to many factors like not good income,
+                  not getting paid as much they deserve and other things because
+                  of which they are unable to buy good and enough pesticides,
+                  insecticides, fertilisers etc.
+                </p>
+                <p>
                   FarmEasy was created to help farners and industries. We act as
                   a raw material provider for the industries and also provide
                   pesticides, insecticides, fertilisers, etc. to the farmers in
                   return for the waste that they provide.
                 </p>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam
-                  qui vel cupiditate exercitationem, ea fuga est velit nulla
-                  culpa modi quis iste tempora non, suscipit repellendus labore
-                  voluptatem dicta amet?
-                </p>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam
-                  qui vel cupiditate exercitationem, ea fuga est velit nulla
-                  culpa modi quis iste tempora non, suscipit repellendus labore
-                  voluptatem dicta amet?
+                  Leading to poor crop quality. While on the other hand other
+                  people were getting benefited. This disheartened us and
+                  inspired us that we should do something for the farmers.
                 </p>
                 <a
                   href="https://garudahacks.com/"
@@ -69,16 +73,20 @@ function About() {
                   industries according to whoever requires what and how much.
                 </p>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam
-                  qui vel cupiditate exercitationem, ea fuga est velit nulla
-                  culpa modi quis iste tempora non, suscipit repellendus labore
-                  voluptatem dicta amet?
+                  Want to make farming easier and profitable? Want to buy raw
+                  materials for industry which is farm waste? Want to evolve
+                  agriculture and the country? We have a one stop solution for
+                  it. FarmEasy.
                 </p>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam
-                  qui vel cupiditate exercitationem, ea fuga est velit nulla
-                  culpa modi quis iste tempora non, suscipit repellendus labore
-                  voluptatem dicta amet?
+                  The waste and products both will be displayed in their
+                  respective pages of waste store and product store. Now the
+                  farmer can view these products and buy the ones whichever they
+                  require using the tokens we gave them in return of waste. This
+                  will help farmers improve their crop quality and yield without
+                  spending too much extra money. Hence it will be profitable for
+                  them as well as the industries as they are getting their raw
+                  matrials.
                 </p>
               </div>
               <div className="col-md-6">
@@ -102,7 +110,7 @@ function About() {
                 <div className="team-member text-center">
                   <img
                     className="img-circle"
-                    src="images/team/team-1.jpg"
+                    src={hetvi}
                     alt=""
                   />
                   <h4>Hetvi Solanki</h4>
@@ -118,7 +126,7 @@ function About() {
                 <div className="team-member text-center">
                   <img
                     className="img-circle"
-                    src="images/team/team-3.jpg"
+                    src={jay_2}
                     alt=""
                   />
                   <h4>Jay Aslaliya</h4>
@@ -128,7 +136,7 @@ function About() {
                 <div className="team-member text-center">
                   <img
                     className="img-circle"
-                    src="images/team/team-1.jpg"
+                    src={jainam}
                     alt=""
                   />
                   <h4>Jainam Shah</h4>
