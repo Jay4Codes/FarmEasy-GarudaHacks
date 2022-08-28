@@ -20,7 +20,7 @@ function ProductStore() {
     })
     const json = await response.json()
     // console.log(json);
-    alert('You have bought insecticide, and your points are reduced by 150')
+    alert('You have bought insecticide, and your Tokens are reduced by 150')
   }
   const buyProduct2 = async(e) => {
     e.preventDefault()
@@ -32,7 +32,7 @@ function ProductStore() {
     })
     const json = await response.json()
     // console.log(json);
-    alert('You have bought insecticide, and your points are reduced by 200')
+    alert('You have bought insecticide, and your Tokens are reduced by 200')
   }
   const buyProduct3 = async(e) => {
     e.preventDefault()
@@ -44,7 +44,7 @@ function ProductStore() {
     })
     const json = await response.json()
     // console.log(json);
-    alert('You have bought insecticide, and your points are reduced by 250')
+    alert('You have bought insecticide, and your Tokens are reduced by 250')
   }
   return (
     <div>

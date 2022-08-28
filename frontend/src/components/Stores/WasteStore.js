@@ -53,7 +53,10 @@ function WasteStore() {
             <span className="bage">Sale</span>
             <div
               className="product-img"
-              style={{ width: "400px", height: "400px" }}
+              style={{
+                width: "360px",
+                height: "360px",
+              }}
             >
               <img
                 className="img-responsive"
@@ -77,8 +80,20 @@ function WasteStore() {
                       setFile(props.image);
                       setShow(true);
                     }}
+                    style={{
+                      background: "#fff",
+                      padding: "10px 0px",
+                      cursor: "pointer",
+                      border: "none",
+                      fontSize: "20px",
+                      transition: "0.2s all",
+                      width: "50px",
+                    }}
                   >
-                    <i className="tf-ion-android-cart"></i>
+                    <i
+                      className="tf-ion-android-cart"
+                      style={{ color: "black" }}
+                    ></i>
                   </button>
                 </li>
               </ul>
@@ -88,7 +103,7 @@ function WasteStore() {
             <h4>
               <a href="product-single.html">{props.name}</a>
             </h4>
-            <p className="price">{props.price} Points</p>
+            <p className="price">{props.price} Tokens</p>
             <p className="price">Available Quantity : {props.quantity}kg</p>
           </div>
         </div>

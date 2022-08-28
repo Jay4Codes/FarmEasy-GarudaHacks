@@ -34,7 +34,7 @@ function ListWaste() {
               <div className="row">
                 <div className="col-md-8">
                   <div className="block billing-details">
-                    <h4 className="widget-title">List Your Waste</h4>
+                    <h1 className="widget-title">List Your Waste</h1>
                     <form className="checkout-form">
                       <div className="form-group">
                         <label for="product_name">Product Name</label>
@@ -62,7 +62,7 @@ function ListWaste() {
                       </div>
                       <div className="form-group">
                         <label for="image">Image</label>
-                        <FileBase type="file" multiple={false} onDone={({ base64 }) => setValue({ ...value, file: base64 })} />
+                        <FileBase type="file" className="form-control" multiple={false} onDone={({ base64 }) => setValue({ ...value, file: base64 })} />
                       </div>
                       <div className="form-group">
                         <button type="submit" className="btn btn-main" onClick={submitData}>
