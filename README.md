@@ -1,33 +1,21 @@
 Hola Everyone, This is team The MangoDB which consists of 4 people of each and every stack. 
 # Contributors :
-Jay Jain(Frontend)       : https://github.com/Jay4Codes
+Jay Jain : https://github.com/Jay4Codes
 
-Yash Joshi (Backend)     : https://github.com/joshiyash05
+Hetvi Solanki : https://github.com/joshiyash05
 
-Deepkumar Patel(Backend) : https://github.com/deep3040
+Jainam Shah : https://github.com/deep3040
 
-# Case Study: FIR
+Jay Aslaliya : https://github.com/deep3040
+
+# Case Study:
 Indonesia being a major producer of agricultural products Farmers form the backbone of country. But they are the ones who suffer a lot too due to many factors like not good income, not getting paid as much they deserve and other things because of which they are unable to buy good and enough pesticides, insecticides, fertilisers etc. leading to poor crop quality. While on the other hand other people were getting benefited. This disheartened us and inspired us that we should do something for the farmers.
 
 # What we do?
 FarmEasy is a web application that helps farmers as well as industries that use farm waste as their raw materials. The farmer uploads the photo of the waste along with information like its type and quantity of the waste for which they will get tokens froms us in return. Then we will collect the waste and sell it to the industries and by the money that we got we will buy some products like insecticides, pesticides, fertilisers, etc. and display on our website. The waste and products both will be displayed in their respective pages of waste store and product store. Now the farmer can view these products and buy the ones whichever they require using the tokens we gave them in return of waste. This will help farmers improve their crop quality and yield without spending too much extra money. Hence it will be profitable for them as well as the industries as they are getting their raw matrials.
 
-The feature available in fir.
-
--> Data Visualization
-
-->Language Translation
-
-->Video call
-
 Success usually comes to those who are too busy to be looking for it.” – Henry David Thoreau
 
-Now we are taking this time to introduce you guys with the web thing of our company which is basically a website.
-
-# We have Branches :
-Frontend Code : https://github.com/Jay4Codes/FIR_Management_CodeFiesta/frontend
-<br />
-Backend Code : https://github.com/Jay4Codes/FIR_Management_CodeFiesta/tree/backend
 Web Preview : 
 Video link https://youtu.be/JY1aubpagyU
   
