@@ -2,11 +2,11 @@ Hola Everyone, This is team The MangoDB which consists of 4 people of each and e
 # Contributors :
 Jay Jain : https://github.com/Jay4Codes
 
-Hetvi Solanki : https://github.com/joshiyash05
+Hetvi Solanki : https://github.com/HetviSolanki49701
 
-Jainam Shah : https://github.com/deep3040
+Jainam Shah : https://github.com/JainamShah-22
 
-Jay Aslaliya : https://github.com/deep3040
+Jay Aslaliya : https://github.com/JayAslaliya10
 
 # Case Study:
 Indonesia being a major producer of agricultural products Farmers form the backbone of country. But they are the ones who suffer a lot too due to many factors like not good income, not getting paid as much they deserve and other things because of which they are unable to buy good and enough pesticides, insecticides, fertilisers etc. leading to poor crop quality. While on the other hand other people were getting benefited. This disheartened us and inspired us that we should do something for the farmers.
