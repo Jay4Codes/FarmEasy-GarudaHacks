@@ -175,7 +175,7 @@ function Home() {
                       <div className="preview-meta">
                         <ul>
                           <li>
-                            <a href="https://garudahacks.com/">
+                            <a href="/">
                               <i className="tf-ion-ios-heart"></i>
                             </a>
                           </li>
@@ -206,7 +206,7 @@ function Home() {
                       <div className="preview-meta">
                         <ul>
                           <li>
-                            <a href="https://garudahacks.com/">
+                            <a href="/">
                               <i className="tf-ion-ios-heart"></i>
                             </a>
                           </li>

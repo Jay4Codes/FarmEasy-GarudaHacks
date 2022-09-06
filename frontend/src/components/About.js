@@ -49,7 +49,7 @@ function About() {
                   inspired us that we should do something for the farmers.
                 </p>
                 <a
-                  href="https://garudahacks.com/"
+                  href="https://youtu.be/JY1aubpagyU"
                   className="btn btn-main mt-20"
                 >
                   Watch Our Presentation
@@ -108,11 +108,7 @@ function About() {
             <div className="row">
               <div className="col-md-3">
                 <div className="team-member text-center">
-                  <img
-                    className="img-circle"
-                    src={hetvi}
-                    alt=""
-                  />
+                  <img className="img-circle" src={hetvi} alt="" />
                   <h4>Hetvi Solanki</h4>
                 </div>
               </div>
@@ -124,21 +120,13 @@ function About() {
               </div>
               <div className="col-md-3">
                 <div className="team-member text-center">
-                  <img
-                    className="img-circle"
-                    src={jay_2}
-                    alt=""
-                  />
+                  <img className="img-circle" src={jay_2} alt="" />
                   <h4>Jay Aslaliya</h4>
                 </div>
               </div>
               <div className="col-md-3">
                 <div className="team-member text-center">
-                  <img
-                    className="img-circle"
-                    src={jainam}
-                    alt=""
-                  />
+                  <img className="img-circle" src={jainam} alt="" />
                   <h4>Jainam Shah</h4>
                 </div>
               </div>
@@ -155,7 +143,7 @@ function About() {
                 <h2>Video presentation</h2>
                 <a
                   className="play-icon"
-                  href="https://garudahacks.com/"
+                  href="https://youtu.be/JY1aubpagyU"
                   data-toggle="lightbox"
                 >
                   <i className="tf-ion-ios-play"></i>

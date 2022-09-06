@@ -67,7 +67,7 @@ function WasteStore() {
             <div className="preview-meta">
               <ul>
                 <li>
-                  <a href="https://garudahacks.com/">
+                  <a href="/waste-store">
                     <i className="tf-ion-ios-heart"></i>
                   </a>
                 </li>

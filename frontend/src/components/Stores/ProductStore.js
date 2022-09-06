@@ -103,7 +103,7 @@ function ProductStore() {
                     <div className="preview-meta">
                       <ul>
                         <li>
-                          <a href="https://garudahacks.com/">
+                          <a href="/product-store">
                             <i className="tf-ion-ios-heart"></i>
                           </a>
                         </li>
@@ -136,7 +136,7 @@ function ProductStore() {
                     <div className="preview-meta">
                       <ul>
                         <li>
-                          <a href="https://garudahacks.com/">
+                          <a href="/product-store">
                             <i className="tf-ion-ios-heart"></i>
                           </a>
                         </li>
